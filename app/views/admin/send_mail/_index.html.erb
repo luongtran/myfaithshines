@@ -1,0 +1,57 @@
+
+<div id="main_content_wrapper">
+	<div id="main_content">
+		<%= form_tag( '/send_mail_messages', :method => :post) do -%>
+				
+			<%= field_set_tag nil, :class => 'inputs' do %>
+				<legend><span>Compose</span></legend>										
+				<ol>
+					<li class="string input optional stringish">
+						<%= label_tag 'send', 'Send to', :id=> 'label_form', :class => 'label' %>
+						<div class="checkbox">
+							<div><%= check_box_tag 'all_users','all_users'  %> All Users</div>
+							<div><%= check_box_tag 'all_sponsors','all_sponsors'  %> All Sponsors</div>
+							<div><%= check_box_tag 'all_nonprofits','all_nonprofits'  %> All Non Profits</div>
+							<div style="clear: both"></div>
+						</div>	
+						<div style="clear: both"></div>
+					</li>	
+					
+					<li class="cc_bcc">
+						<%= label_tag 'cc', 'Cc', :id=> 'label_form', :class => 'label' %>											
+						<%= text_area_tag 'cc' %>						
+					</li>
+					<li class="cc_bcc">
+						<%= label_tag 'bcc', 'Bcc', :id=> 'label_form', :class => 'label' %>											
+						<%= text_area_tag 'bcc' %>						
+					</li>
+					
+					<li class="string input optional stringish">
+						<%= label_tag 'others', 'Others Mails', :id=> 'label_form', :class => 'label' %>
+						<% if addresses.nil? ? text = "" : text = addresses %>						
+							<%= text_area_tag 'others_mail', text %>
+						<%end%>
+					</li>					
+					<li class="string input optional stringish">
+						<%= label_tag 'subject', 'Subject', :id=> 'label_form', :class => 'label' %>
+						<%= text_field_tag 'subject' %>
+					</li>
+					<li class="string input optional stringish">
+						<%= label_tag 'body', 'Body', :id=> 'label_form', :class => 'label' %>
+						<%= text_area_tag 'body', nil, :size => "80x25",:class => 'tinymce' %><%= tinymce %>
+					</li>
+				</ol>
+							
+			<% end %>
+			<%= field_set_tag nil, :class => 'button' do%>
+				<ol>
+					<li class="commit button">
+						<%= submit_tag 'Send'%>
+					</li>
+				</ol>
+			<%end%>			
+			
+		<% end -%>
+	</div>
+</div>
+

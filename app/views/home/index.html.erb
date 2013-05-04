@@ -1,0 +1,49 @@
+<div id="wrapper">	
+	<div id="sidebar">						
+	     <div id="section">
+		    <div class="sectionwrapper">
+		    <% if @sponsors.length >= 1 %>
+		     <% if @sponsors.length > 1  ? @class='rotator' : @class='img_fixed' %>		
+		      <div>
+		      	   <h2>Featured Sponsors</h2>
+			      	<div id="slidercontainer">
+			      	  <div class="<%= @class %>">
+						  <ul>
+						  	<% @sponsors.each do |sponsor|%>
+								<li class="show">
+									<%= link_to image_tag(sponsor.image.url, :border=>0), sponsor.site, :target=>'_blank'  %>
+								</li>
+							<% end %>
+						   
+						  </ul>
+						</div>
+			        </div>
+		      </div>
+		      <%end%>	
+		      <%end%>
+		      <div class="sidecontent">
+		           <h2>Participating Non-Profits</h2>
+					<ul>
+						<% @nonprofits.each do |nonprofit|%>
+
+						<li>  <%= link_to nonprofit.name, nonprofit_view_path(nonprofit.id) %></li>
+						<% end %>
+					</ul>
+		      </div>
+		    </div>
+		 </div>
+	       
+			
+    </div>
+    <div class="content">
+    	<div class="snapshots_wrapper">
+	    	<% @nonprofits.each do |nonprofit|%>
+	 			<div class="snapshot_container">
+					<%= link_to image_tag(nonprofit.snapshot.url), nonprofit_view_path(nonprofit.id)  %>
+					<%= link_to nonprofit.name, nonprofit_view_path(nonprofit.id), :class=>'nonprofit_name'  %>
+				</div>
+			<% end %>
+		</div>
+    </div>
+
+</div>

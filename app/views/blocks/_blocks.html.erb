@@ -1,0 +1,83 @@
+<div id="grid-content">
+	<div id="grid-headers">
+		<% ('a'..'t').to_a.each do |letter| %>
+			<span class="lateral dog-title-up"><%= letter %></span>
+		<% end %>
+	</div>
+	
+	<div id="grid-container">
+		<% limit = 20 %>
+		<% if @non_profit.expanded %>
+			<% limit = 25%>
+		<%end%>
+
+		<% (1..limit).to_a.each do |y| %>
+					
+		    <% (1..20).to_a.each do |x| %>
+			    <% if !@non_profit.non_profit_type.blank? && @non_profit.non_profit_type.name.include?("NP Fund") %>
+			   		<span class="dog pickme"><a href='<%= reserve_path(non_profit, x, y) %>'><span class="img_placeholder"></span></a></span>
+				<%else%>
+					<span class="dog"><a href='<%= reserve_path(non_profit, x, y) %>'><span class="img_placeholder"></span></a></span>
+				<%end%>   
+			<% end %>
+					
+		<% end %>
+		
+		
+		<% rooms.each do |room|%>
+		        <% y = room.y.-(1) %>
+		        <% x = room.x.-(1) %>
+		        
+			<a data-dog= "<%= room.dog.name %>" class="place"  href="<%= viewdog_path(room.id)%>" style="position:absolute;top:<%= y * 40 %>px;left:<%= x * 40 %>px;z-index:2;width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;">
+				<img  src="<%= room.dog.image.url(:thumb) %>" style="width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;"></img>
+			</a>	
+			<% if !selection_room.blank? && room.id.to_s == selection_room.to_s %>
+	
+				<a data-dog= "<%= room.dog.name %>" class="place"  href="<%= viewdog_path(room.id)%>" style="border: 3px solid darkorange; position:absolute;top:<%= y * 40 %>px;left:<%= x * 40 %>px;z-index:2;width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;">
+					<img  src="<%= room.dog.image.url(:thumb) %>" style="width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;"></img>
+				</a>
+			<%else%>
+				<a data-dog= "<%= room.dog.name %>" class="place"  href="<%= viewdog_path(room.id)%>" style="position:absolute;top:<%= y * 40 %>px;left:<%= x * 40 %>px;z-index:2;width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;">
+					<img  src="<%= room.dog.image.url(:thumb) %>" style="width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;"></img>
+				</a>
+			<%end%>
+			
+		<% end %>
+		
+		<% if !reservations.nil? %>
+		        <% reservations.each do |reservation| %>
+		               <% width = reservation.width.-(1) %>
+		               <% height = reservation.height.-(1) %>
+		               <% (0..width).to_a.each do |x| %>
+		                       <% (0..height).to_a.each do |y| %>
+		                          		<img src="/assets/reserve.png" style="position:absolute;top:<%= (reservation.y-1 + y)* 40 %>px;left:<%= (reservation.x-1 + x)* 40 %>px;z-index:2;width:40px;height:40px;"></img>
+		                                 
+		                       <% end %>
+		               <% end %>
+		               <% if reservation.user_id == current_user.id %>
+                       	  <span class="reserve"><a href="#" class="edit_reservation" style="text-decoration: none; position:absolute;top:<%=(reservation.y-1)*40%>px;left:<%=(reservation.x-1)*40%>px;width:<%=reservation.width*40%>px;height:<%=reservation.height*40%>px;z-index:3">&nbsp;</a></span>
+                       <% else %>
+                       <span class="reserve"><a href="#" style="text-decoration: none; position:absolute;top:<%=(reservation.y-1)*40%>px;left:<%=(reservation.x-1)*40%>px;width:<%=reservation.width*40%>px;height:<%=reservation.height*40%>px;z-index:3">&nbsp;</a></span>
+                       <% end %>
+		        <% end %>
+		<% end %>
+	</div>
+	
+	<ul class="lateral dog-title-right">
+		<% (0..limit-1).to_a.each do |number| %>
+			<li><%= number %></span>
+		<% end %>
+	</ul>
+	
+</div>
+
+<div id="popUp" class="edit_reservation_popup" style="display:none">
+		<h4 style="margin-bottom: 7px;">This reservation has been made by you, are you sure that you want to edit/change it? Otherwise you can choose another block. </h4>	
+		<div style="width: 100px; margin: 0 auto;"><%= button_to 'YES', add_entity_path, :class => 'button', :id =>'button_yes', :style => "float: left;"  %>
+			<%= button_to 'NO', '#', :class => 'button edit_reservation', :id=> 'button_no', :style => "float:right;"  %>
+		</div>				
+</div>
+	<div class="build_another_overlay">
+	</div>
+
+

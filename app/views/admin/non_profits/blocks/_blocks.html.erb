@@ -1,0 +1,47 @@
+<div id="grid-content">
+	<div id="grid-headers">
+		<% ('a'..'t').to_a.each do |letter| %>
+			<span class="lateral dog-title-up"><%= letter %></span>
+		<% end %>
+	</div>
+	<ul class="lateral dog-title-right">
+		<% (0..19).to_a.each do |number| %>
+			<li><%= number %></span>
+		<% end %>
+	</ul>
+	<div id="grid-container">
+		<% (1..20).to_a.each do |y| %>
+		        <% (1..20).to_a.each do |x| %>
+			        <span class="dog"><a href='<%= reserve_path(non_profit, x, y) %>'><span class="img_placeholder"></span></a></span>
+			<% end %>
+		<% end %>
+		
+		
+		<% rooms.each do |room|%>
+		        <% y = room.y.-(1) %>
+		        <% x = room.x.-(1) %>
+			<a class="place" href="<%= viewdog_path(room.id)%>" style="position:absolute;top:<%= y * 40 %>px;left:<%= x * 40 %>px;z-index:2;width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;">
+				<img  src="<%= room.dog.image %>" style="width:<%= room.width * 40 %>px;height:<%= room.height * 40 %>px;"></img>
+			</a>
+			
+		<% end %>
+		
+		<% if !reservations.nil? %>
+		        <% reservations.each do |reservation| %>
+		               <% width = reservation.width.-(1) %>
+		               <% height = reservation.height.-(1) %>
+		               <% (0..width).to_a.each do |x| %>
+		                       <% (0..height).to_a.each do |y| %>
+		                                 <img src="/assets/reserve.png" style="position:absolute;top:<%= (reservation.y-1 + y)* 40 %>px;left:<%= (reservation.x-1 + x)* 40 %>px;z-index:2;width:40px;height:40px;"></img>
+		                                 
+		                       <% end %>
+		               <% end %>
+		               <% if reservation.user_id = current_user %>
+                       		<a href="<%= add_entity_path %>" style="position:absolute;top:<%=(reservation.y-1)*40%>px;left:<%=(reservation.x-1)*40%>px;width:<%=reservation.width*40%>px;height:<%=reservation.height*40%>px;z-index:3">&nbsp;</a>
+                       <% end %>
+		        <% end %>
+		<% end %>
+	</div>
+</div>
+
+

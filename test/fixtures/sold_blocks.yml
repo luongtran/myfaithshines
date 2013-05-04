@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  amount: 1
+  compensation_due: 1
+  associate_producer_id: MyString
+
+two:
+  amount: 1
+  compensation_due: 1
+  associate_producer_id: MyString

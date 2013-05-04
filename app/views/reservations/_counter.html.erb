@@ -1,0 +1,25 @@
+<% if !minutes.nil? && !seconds.nil? && !(minutes.eql?("00") && seconds.eql?("00") )  %>
+<div id="counter_wrapper">
+	<p id="counter_label">
+		You have reserved a block in the grid. Time left to complete the purchase process:
+	</p>
+	<%= javascript_tag do %>
+	  window.minutes = "<%=raw minutes %>";
+	  window.seconds = "<%=raw seconds %>";
+	<% end %>
+	
+	<div id="counter1" style="height: 77px; overflow-x: hidden; overflow-y: hidden; "></div>
+	<div class="desc">
+	        <div>Minutes</div>
+	        <div>Seconds</div>
+	</div>
+	
+	<%if @visible == true %>
+		<div class="checkout_link" style="margin-top: 35px;font-size: 16px">			
+			<%= button_to "Checkout",checkout_path, :id=>"link_checkout",:class => 'button' %>
+		</div> 
+	<%end%>
+	
+</div>
+
+<%end%>

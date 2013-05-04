@@ -1,0 +1,45 @@
+<%= form_for @dog, :html => {:class => "create_entity"+ type_id.to_s, :multipart => true} do |f| %>
+<%= f.hidden_field :dog_type_id, :value=>type_id %>
+<%= f.hidden_field :id, :value => @dog.id %>
+<table>
+	<tr>
+		<td> <%= f.label :name %>: </td>
+		<td> <%= f.text_field :name %> </td>
+	</tr>
+	
+	<%if type_id.to_s != '3' %>
+		<tr>
+			<td> <%= f.label :age %>: </td>
+			<td> <%= f.number_field :age %></td>		
+		</tr>
+	<%end%>
+	<tr>
+		<td> <%= f.label :gender %>: </td>
+		<td> <%= f.select :gender_id, options_for_select(Gender.all.map { |gender| [gender.name, gender.id] }) %>  </td>		
+	</tr>
+			
+	<tr>
+		<td> <%= f.label :home %>: </td>
+		<td> <%= f.text_field :home %> </td>
+	</tr>
+	<tr>
+		<td> <%= f.label :motto %>: </td>
+		<td> <%= f.text_field :motto %> </td>
+	</tr>
+	<tr>
+		<td> <%= f.label :more %>: </td>
+		<td> <%= f.text_area :more %> </td>
+	</tr>
+	<tr>
+		<td> <%= f.label :image %>: </td>
+		<td>  <%= f.file_field :image %> Max size: 6MB </td>
+		
+	</tr>
+	<% if !@dog.image_file_name.nil?%>
+		<tr>
+			<td><%= image_tag @dog.image.url(:thumb) %></td>
+			<td></td>
+		</tr>
+	<%end%>
+</table>
+<% end %>

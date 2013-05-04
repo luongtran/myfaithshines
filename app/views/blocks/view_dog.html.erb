@@ -1,0 +1,74 @@
+  <%= stylesheet_link_tag  "popups/popups", :media => "all" %>
+
+<div class='dog-detail'>
+	
+	<h2><%= @room.dog.name %></h2>
+	
+	<div style="text-align: center">
+		<img  src="<%= @room.dog.image %>"></img>
+	</div>
+	
+	<div class="tab_info">
+		<table>
+			<% if !@room.codes.blank? %>
+				<td style="color:#FF9506; font-weight:bold"> Sponsor:</td>
+				<% cod = @room.codes.first %>	
+				<td><%= link_to cod.sponsor.name, cod.sponsor.site_sanitized, :target => "_blank" %></td>	
+			<%end%>
+			
+			<% if !@room.dog.name.blank? %>
+				<tr>
+					<td><b>Name:</b></td>
+					<td><%= @room.dog.name %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@room.dog.gender.blank? && !@room.dog.gender.name.blank? %>
+				<tr>
+					<td><b>Gender:</b></td>
+					<td><%= @room.dog.gender.name %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@room.dog.age.to_s.blank? %>
+				<tr>
+					<td><b>Age:</b></td>
+					<% if !@room.dog.age.to_s.blank? %>
+						<td><%= @room.dog.age %> years <td>
+					<%end%>
+
+				</tr>				
+			<%end%>
+			
+			
+			<% if !@room.dog.home.blank? %>
+				<tr>
+					<td><b>Home:</b></td>
+					<td><%= @room.dog.home %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@room.dog.motto.blank? %>
+				<tr>
+					<td><b>Motto:</b>:</td>
+					<td><%= @room.dog.motto %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@room.dog.more.blank? %>
+				<tr>
+					<td><b>About:</b></td>
+					<td><%= @room.dog.more %></td>
+				</tr>
+			<%end%>
+			
+			
+			
+		</table>
+		
+	
+	</div>
+	
+</div>
+
+<br />

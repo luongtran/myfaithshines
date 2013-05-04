@@ -1,0 +1,15 @@
+<%= javascript_tag do %>
+  window.minutes = "<%=raw @minutes %>";
+  window.seconds = "<%=raw @seconds %>";
+<% end %>
+
+<div id="counter1" style="height: 77px; overflow-x: hidden; overflow-y: hidden; "></div>
+<div class="desc">
+        <div>Minutes</div>
+        <div>Seconds</div>
+</div>
+
+<div class="actions">
+        <a id='confirm' class="button" href="<%= create_room_path(@reservation.id) %>">Purchase</a>
+        <a id='return' style="display:none;" class="button" href="<%= nonprofit_view_path(@reservation.non_profit_id) %>">Return</a>
+</div>

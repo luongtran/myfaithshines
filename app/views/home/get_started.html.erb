@@ -1,0 +1,75 @@
+
+<div id="get_started_wrapper">
+	<h2><b>Get Started</b></h2>
+	<%if current_user.nil? %>
+	
+		<div style="display: inline;float: left">
+			
+		
+			<div id="about" style="text-align: center;margin-bottom: 30px;margin-left: 147px">
+				<span style="font-size: 16px">This is where it all begins. If this is your first time building a block,<br />
+						please sign-up. If you are a returning friend, please sign-in.</span>
+			</div>
+			
+			<div id="sign_button"> <%= link_to "Sign up", '#', :class =>'button', :id => 'button' %></div>
+			<div id="log_button"> <%= link_to "Sign in", '#', :class =>'button', :id => 'button' %></div>
+			
+				<div id="partial_signup" style="margin-left: 147px;margin-top:40px display:none;">
+					<%= render :partial=> 'devise/registrations/get_started_signup' %>  		
+				</div>
+				
+				<div id="partial_login" style="margin-left: 147px;margin-top:40px; display:none;">
+					<%= render :partial=> 'devise/sessions/get_started_login' %>  		
+				</div>
+			
+		</div>	
+		<div id='img_dog' style="float: right;width: 300px"> 
+			<img src="assets/bordier_colli.jpg">
+		</div>
+
+	<%else%>
+		<h2>WELCOME BACK!</h2>
+		<div class="selectnp">
+			<label>Please select a non-profit organization to support: </label><%= select_tag :id, options_from_collection_for_select(NonProfit.all(:order=> "name asc"), "id", "name") %><input class="button" id="getstarted_gonp" name="commit" type="submit" value="Go">
+		</div>
+		<br />
+		<br />
+		
+		<div>						
+			<%if !@user_room.blank? %>
+				<% @user_room.each do |d| %>
+					<div id="find_list">	
+						<% if !d.dog.image.url.nil? %>	
+							<div class="mydog_image"><%=  image_tag (d.dog.image.url), :class => 'dog_image_td' %></div>
+						<%end%>
+						<% if !d.dog.name.blank? %>
+							<div id="mydog" class="mydog_name" style="width: 150px;"><p><%= d.dog.name %></p></div>		
+						<%else%>
+							<div id="mydog" class="mydog_name" style="width: 150px;"></div>						
+						<%end%>
+						<% if !d.non_profit.blank? %>
+							<div id="mydog"><p><%= d.non_profit.name %></p></div>		
+						<%else%>
+							<div id="mydog"></div>				
+						<%end%>
+						
+						<div id="mydog"><p> Row <%= d.y - 1%> / Column <%= d.x.to_i.to_s(26).tr("1-9a-q", "A-Z") %></p></div>
+						<div id="mydog">
+							<p><%= link_to 'Duplicate', '#', :class => 'duplicate', :id_room => d.id %> <input type="hidden" class="dog_id" value="<%= d.dog.id %>" >
+							<%= link_to 'New', '#', :class => 'new', :id_room => d.id %></p>
+						</div>						
+										
+						<div id=<%= "select_" + d.id.to_s %>  class="select_div"> </div>						
+						<div id="dotted_line"></div>	
+					</div>																						
+				<%end%>
+			<%end%>
+	
+			
+		</div>
+		
+	<%end%>
+	
+</div>		
+
+	

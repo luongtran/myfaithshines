@@ -1,0 +1,253 @@
+
+<div id="review">
+	
+	<h2>Review</h2>
+
+	<div style="display: inline;float: right;margin-top: 2px">	 					
+		<%= button_to 'Edit', reserve_up_path(@rev.non_profit_id, @rev.x, @rev.y, @rev.id.to_s), :class => 'button', :id => 'button' %>	
+	</div>	  		  	
+	<div id="preview" style="display: inline;float: right; margin-top: 2px;" href="<%= previewdog_path(@rev.id) %>">				
+		  <input type="submit" value="Preview" id="button" class="button">	 		  	
+	</div>
+		
+	<div id="popUp" class="build_another_popup">
+		<% if @rev.non_profit.non_profit_type != nil && @rev.non_profit.non_profit_type.name == "NP Fund‐Raiser"%>
+			<p>Do you have another code?</p>	
+		<%else%>
+			<p>Do you want to build another Good Dog Block?</p>	
+		<%end%>
+
+		<br />
+		<div><%= button_to 'YES', add_to_cart_path, :class => 'button', :id =>'button_yes' %>
+			<%= button_to 'NO', checkout_path, :class => 'button', :id=> 'button_no' %>
+		</div>					
+	</div>
+
+	<div class="build_another_overlay">
+	</div>
+		
+		
+	<div id="review_cont">
+			
+	<div id="non_profit_info">
+		<table>	
+			<tr>
+				<td colspan="2"> 
+					<div class="info_title">Non Profit Information</div>
+				</td>
+			</tr>
+			<% if !@rev.non_profit.name.blank?%>
+			<tr> 	
+				<td><b>Name:</b></td>		
+				<td>				
+					<div class="info_review"><%=@rev.non_profit.name %></div>						
+				</td>	
+			</tr>	
+			<%end%> 
+			<tr>	
+				<td><b>Email:</b></td>
+				<td>	
+					<% if !@rev.non_profit.email.blank?%>		
+			 		<div class="info_review"><%=@rev.non_profit.email %></div>			
+					<%end%>
+				</td>
+			</tr>
+			<tr>
+				<td><b>Sites:</b></td>
+				<td>
+					<% if !@rev.non_profit.site.blank?%>
+					<div class="info_review"><%= @rev.non_profit.site %></div>
+					<%end%>
+				</td>			
+			</tr>
+			
+		</table>		
+					
+	</div>
+	
+	<div id="dog_info">
+			
+	<table>
+		<tr>
+			<td colspan="2"> 
+				<div class="info_title">Dog Information</div>
+			</td>
+		</tr>
+		<%if !@dog.name.blank?%>
+		<tr>
+			<td><b>Name:</b></td>
+			<td>						
+				<div class="info_review"><%= @dog.name %></div>		
+			</td>			
+		</tr>
+		<%end%>
+		<%if !@dog.gender.blank?%>
+		<tr>
+			<td><b>Gender:</b></td>
+			<td>						
+				<div class="info_review"><%= @dog.gender.name %></div>		
+			</td>			
+		</tr>
+		<%end%>
+		
+		
+		<% if !@dog.age.to_s.blank? %>
+			<tr>
+				<td><b>Age:</b></td>
+				<% if !@dog.age_formatted.nil? %>
+					<td> <div class="info_review"><%= @dog.age_formatted %></div><td>
+				<%end%>
+			</tr>				
+		<%end%>
+		
+		
+		<% if !@dog.home.blank?%>
+		<tr>
+			<td><b>Home:</b></td>
+			<td>
+				<div class="info_review"><%= @dog.home %></div>												
+			</td>
+		</tr>
+		<%end%>
+		
+		<% if !@dog.motto.blank?%>
+		<tr>
+			<td><b>Motto:</b>:</td>
+			<td>	
+				<div class="info_review"><%= @dog.motto %></div>
+				
+			</td>			
+		</tr>
+		<%end%>
+
+		
+	</table>
+									
+	</div>
+	
+	
+	<div id="reservation_info">
+	
+	<table>	
+		<tr>
+			<td colspan="2"> 
+					<div class="info_title">Reservation</div>
+			</td>
+		</tr>
+	
+		<%if current_user.to_s.blank?%>	
+		<tr>
+			<td><b>User:</b></td>
+			<td>				
+				<div class="info_review"><%=current_user.email%></div>
+		
+			</td>
+		</tr>
+		<%end%>
+		
+		<%if !@rev.x.to_s.blank?%>
+		<tr>		
+			<td><b>Position:</b></td>
+			<td>	
+				<div class="info_review"><p> Row <%= @rev.y - 1 %> / Column <%= @rev.x.to_i.to_s(26).tr("1-9a-q", "A-Z") %></p></div>					
+			</td>
+		</tr>
+		<%end%>
+		
+		<% if !@rev.width.to_s.blank?%>
+		<tr>
+			<td><b>Width:</b></td>
+			<td>			
+				<div class="info_review"><%= @rev.width %></div>
+				
+			</td>
+		</tr>
+		<%end%>
+		
+		<% if !@rev.height.to_s.blank?%>
+		<tr>
+			<td><b>Height</b></td>
+			<td>			
+				<div class="info_review"><%= @rev.height %></div>				
+			</td>
+		</tr>
+		<%end%>
+				
+	</table>
+				
+	</div>	
+	
+	<br />
+	<div id="gift_info">
+		<% if @gift_list.length > 0%>			
+			<table>	
+			<thead>
+				<tr>
+					<td colspan="2"> 
+							<div class="info_title">Gift Code</div>
+					</td>
+				</tr>			
+			</thead>	
+			<tbody>
+				<% @gift_list.each do |gift| %>
+				<tr>
+					<td><%= gift.code_value %></td>	
+					<%if !@blockCode.blank? %>																		
+						<td><%= @blockCode %></td>	
+					<%else%>
+						<td>$<%= gift.redeem_value %></td>	
+					<%end%>													
+				</tr>					
+			<%end%>
+			</tbody>
+									
+			</table>				
+		<%end%>		
+	</div>
+	<br />
+	
+	<table id="preview" style="width: 600px">
+		<tr>
+			<td id="preview" style="width: 300px">
+				<span style="font-weight: bold;">Associate Producer </span><%= select_tag(:associate_producer_id, options_from_collection_for_select(@associate_producer, :id, :name), :include_blank => true) %>
+			</td>
+		
+			
+		</tr>
+	</table>
+
+	</div>
+	
+	<div id="review_info">		
+		<div class="info_title">Overview</div><br />
+		<table class="info_review">
+			<%if !@blockCode.blank? %>
+				<tr><td>Block Size: </td><td><%= @blockCode.to_s %></td></tr>
+			<%else%>
+				<tr><td>Total Price:</td><td>$<%= @total_price.to_s %></td></tr>
+				<tr><td>Total Gift Value:</td><td>$<%= @sum_gift.to_s %></td></tr>	
+				<tr><td>Amount Due:</td><td>$<%= @final_price.to_s %></td></tr>
+			<%end%>
+		</table>
+	</div>
+	
+	
+
+	<div style="clear: both;"></div>
+	<div class="button_wrapper">		
+		<% if @final_price > 0 %>
+			<div>		
+				<input type="hidden" id="reserve" value="<%= @reservation_id %>" >	  
+			  <input type="button" value="Next" id="button" class="button checkout_btn">	  			  
+			</div>
+		<%else%>
+			<input type="hidden" id="reserve" value="<%= @reservation_id %>" >
+			<%= button_tag "Next", :class=>'button checkout_btn', :id=>'confirm_purchase'%>		
+		<%end%>	
+		
+	</div>
+
+</div>
+
+
+

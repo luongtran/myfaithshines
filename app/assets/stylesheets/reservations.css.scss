@@ -1,0 +1,291 @@
+// Place all the styles related to the reservations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dog-reservation{
+  float:left;
+  height:40px;
+  width:40px;
+  z-index: 1;
+}
+
+
+p{
+  font-family: Helvetica, Arial, sans-serif;
+  .important{
+   font-size:14px;
+  }
+   font-size:13px;
+}
+
+.option-container-general
+{
+    float:left;
+    width:230px;
+    height:276px;
+    margin:0px 10px 25px 10px;
+    text-align: center;
+    padding-top: 10px;
+    border: 1px solid #FFAD00;
+    padding-bottom: 10px;
+}
+
+.option-container {
+  @extend .option-container-general;
+  background-color: #F8FCFF;
+  cursor: pointer;
+}
+
+.option-container-disabled {
+  @extend .option-container-general;
+}
+
+
+.option-title {
+  margin-bottom: 5px;
+}
+
+.option {
+  margin: 5px auto;
+}
+
+.price {
+  height: 30px;
+}
+
+
+#content {
+  .gift_label{
+    width: 30px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .gift_code_section{
+    margin-bottom: 30px;
+  }
+  
+  .gift_code_choose{
+    width: 100px;
+    float: left;
+  }
+  
+  .gift_code_fields{
+    width: 550px;
+    display: inline-block;
+  }
+  
+  .add_gift_code{
+    cursor: pointer;
+    height: 24px;
+    position: relative;
+    top: 8px;
+  }
+  
+  
+  .del_gift_code{
+    cursor: pointer;
+  }
+  
+  .gift_code {
+    display: inline;
+    margin-left: 15px;
+  }
+  
+  .wrong{
+    color: #c00;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .redeem{
+    color: #060;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+}
+
+
+
+#add_entity_wrapper{
+
+  margin-bottom: 30px;
+  
+  #tabs{
+    margin-bottom: 30px;
+  }
+  
+  table{
+    width: 600px;
+    
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  #thumbs{
+    width: 200px;
+    float: left;
+    margin-top: 25px;
+  }
+  
+  //j-query-ul-1.8.21.custom.css
+ // .ui-widget {
+ // font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+ // font-size:1em;
+ // }
+  
+}
+
+#review{
+  width: 500px;
+  margin: 0 auto;
+  
+  h3{
+    color:#5E6469;
+    float:right;
+  }
+  
+  .info_title{
+    color: #FF9506;    
+    font-size: 17px;
+    margin-bottom: 1.25em; 
+  }
+  
+  .title_tab{  
+    font-weight: bold;
+  }
+  
+  .info_review{    
+    font-size: 12px; 
+    margin-top:0px; 
+  }
+  
+  #review_cont{
+    //display:inline-block;
+    width:200px;
+    float: left;
+    table{
+        tr > td:first-child { 
+          width: 60px;
+        }   
+      }
+      
+    #non_profit_info
+    {
+      margin-top: 20px; 
+         
+    }
+    
+    #dog_info
+    {
+      margin-top: 20px; 
+    }
+    
+    #reservation_info
+    {
+      margin-top: 20px; 
+    }
+    gift_info{
+      text-align:center;
+    }
+    
+  }
+  
+ #review_info{
+    width:180px;
+    padding:10px;
+    border:2px solid orange;
+    float:left;
+    margin-top: 100px;
+    margin-left: 42px;
+    -webkit-border-radius: 15px;   
+    
+    table.info_review{
+      font-size: 1.2em;
+      
+      td:first-child{
+        font-weight: bold;
+      }
+      td:last-child{
+        color: #0175BC;
+      }
+    }
+    
+    
+ } 
+ 
+ .button_wrapper{
+   margin-top: 30px;
+ } 
+
+ 
+ .build_another_popup{
+   display: none;
+   position: fixed;
+   z-index: 3;
+   border: 1px solid gray;
+   padding: 10px;
+   width: 300px;
+   height: 73px;
+   top: 25%;
+   left: 50%;
+   margin-left: -150px;
+   background-color: white;
+   text-align: center;
+ }
+ .button_to{
+   display: inline;
+ }
+ .button_to>div{
+   display: inline;
+ }
+ .build_another_overlay{
+   background-color: black;
+   opacity: 0.3;
+   display: none;
+   z-index: 2;
+   position: fixed;
+   left: 0;
+   top:0 ;
+   width: 100%;
+   height: 100%;
+ }
+}
+
+ .build_another_overlay{
+   background-color: black;
+   opacity: 0.3;
+   display: none;
+   z-index: 2;
+   position: fixed;
+   left: 0;
+   top:0 ;
+   width: 100%;
+   height: 100%;
+ }
+
+.edit_reservation_popup{
+   display: none;
+   position: fixed;
+   z-index: 3;
+   border: 1px solid gray;
+   padding: 10px;
+   width: 300px;
+   height: 93px;
+   top: 25%;
+   left: 50%;
+   margin-left: -150px;
+   background-color: white;
+   text-align: center;
+ }
+
+
+
+#confirm_room{
+  display: inline-block;
+  width: 626px;
+  position: relative;
+  top: -60px;
+}

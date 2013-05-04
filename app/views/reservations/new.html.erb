@@ -1,0 +1,83 @@
+<% if flash[:error] %>
+        <p>Error: <%= flash[:error] %></p>
+<% end %>
+
+
+<%= hidden_field_tag 'non_profit_id', @non_profit.id %>
+<% if @isFundRaiser %>
+	<h2>Enter your Gift Code</h2>
+<%else%>
+	<h2>Do you have a gift code?</h2>
+<%end%>
+
+<div class="gift_code_section">
+	<% if !@isFundRaiser %>
+	<div class="gift_code_choose">
+		<p>
+			<%= label_tag 'No', nil, :class=>'gift_label'%>
+			<%= radio_button_tag 'gift_code_has', 'No', !@has_gifts%>
+		</p>
+		<p>
+			<%= label_tag 'Yes', nil, :class=>'gift_label'%>
+			<%= radio_button_tag 'gift_code_has', 'Yes', @has_gifts%>
+		</p>
+	</div>
+	<%end%>
+	<div class="gift_code_fields">
+		<div class="gift_code_line">
+			<%= text_field_tag 'gift_code_1', @my_reserve.nil? ? nil : @my_reserve.gift_codes, :class=> "gift_code gift_code_field" %>
+			<span class="code_value" style="font-size: 14px; color: green; margin: 0 8px;"></span>
+			<span  class="code_validate" style="font-size: 11px; color: green; cursor: pointer; text-decoration: underline;">Validate</span>
+		</div>
+	</div>
+
+	<div style="clear:both"></div>
+	<%if @isFundRaiser%>
+		<p style="color: green; margin-top: 10px;">You can only redeem one gift code at time but once you build the first block, you can easily duplicate   
+		your Good Dog’s block and redeem additional codes by going to the Get Started page.
+		Please redeem the full value of the gift code. This system does not hold the unused balance as a 
+		credit. Blocks for this Non‐Profit are being sold directly by the organization and are not available for purchase here. </p>
+	<%else%>
+		<p style="color: green; margin-top: 10px;">You can only redeem one gift code at time but once you build the first block, you can easily duplicate   
+		your Good Dog’s block and redeem additional codes by going to the Get Started page.
+		Please redeem the full value of the gift code. This system does not hold the unused balance as a 
+		credit. Example: for a $4 gift code, select a configuration that is valued at $4 or more. You will be 
+		directed to PayPal for any amount due beyond the value of the gift code. </p>
+	<%end%>
+
+</div>
+
+
+<h2>Select your block size</h2>
+
+<p class="important">Please select the number of Good Dog Blocks you want to purchase. If you don't see the configuration you want, go back to the main page and select a different block. Certain configurations will not be available with certain blocks as they may overlap onto an already occupied block or run off the edge. </p>
+
+<p class="important">Before continuing, please be sure that the photo you wish to upload is available on your computer. If you don't have a dog of your own, select "Good Dog I Wish I Had" on the next page and you will be presented with photos of ten virtual dogs to choose from.</p>
+
+<%- @room_options.each do |option| %>
+        <div class="<%= option.enabled ? 'option-container': 'option-container-disabled' %>">
+                <% if option.enabled %> 
+                		<%= hidden_field_tag 'redirect', @redirect %>
+                		<%= hidden_field_tag 'create_new', @create_new %>
+                		<%= hidden_field_tag 'option_id', option.id.to_s %>
+                        <h2 class="option-title"><%= "#{option.width}x#{option.height} block"%></h2>
+                        <% if @isFundRaiser %>
+                        	<p class="price">Pick Me</p>
+                        <% else %>
+                        	<p class="price">$<%= "#{option.price.to_int}"%> USD</p>
+                        <%end%>
+                <% else %>
+                        <h2 class="option-title"><%= "#{option.width}x#{option.height} block"%></h2>
+                        <p class="price">This block does not fit in the selected position</p>
+                <% end %>
+                
+                <div class="option" style="width:<%= option.width * 40%>px">
+                        <% (1..option.height).to_a.each do |y| %>
+                                <% (1..option.width).to_a.each do |x| %>
+	                                <img src='/assets/paw.png' class="dog-reservation" alt='little paw' />
+	                        <% end %>
+                        <% end %>
+                       
+                </div>
+        </div>
+<% end %>

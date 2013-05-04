@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  all_users: false
+  all_sponsors: false
+  all_nonprofits: false
+  addresses: MyText
+  body: MyText
+  other_mails: MyText
+  subject: MyString
+
+two:
+  all_users: false
+  all_sponsors: false
+  all_nonprofits: false
+  addresses: MyText
+  body: MyText
+  other_mails: MyText
+  subject: MyString

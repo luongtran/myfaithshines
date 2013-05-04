@@ -1,0 +1,12 @@
+development:
+  bucket: 'GoodDogTest'
+  access_key_id: 'AKIAIDF7RBTQFX676MCA'
+  secret_access_key: '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'
+test:
+  bucket: 'GoodDogTest'
+  access_key_id: 'AKIAIDF7RBTQFX676MCA'
+  secret_access_key: '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'
+production:
+  bucket: 'images.iamagooddog.com'
+  access_key_id: '09MYFJ29YW2ZZBFC5AR2'
+  secret_access_key: 'SlTr4NzfUDg3xD9pyGOSL/I1Upvu9a1aHbb0Wyh1'

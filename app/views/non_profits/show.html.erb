@@ -1,0 +1,57 @@
+<div id="wrapper_blocks">
+	
+	<% if @non_profit.sponsors.length >= 1 %>
+		
+	<div id="sidebar_block">						
+	     <div id="section_block">
+		    <div class="sectionwrapper_block">
+		    <%if @non_profit_sp.length >= 1 %>	
+		    <% if @non_profit_sp.length > 1  ? @class='rotator_block' : @class='img_fixed' %>		
+		      <div>
+		      	   <h3 style="font-weight: bold; text-align: center">Featured Sponsors</h3>
+			      	<div id="slidercontainer_block">			      																			      				     
+				      	  <div class= "<%= @class %>">
+							  <ul style="width: 100%">						  	
+							  	<% @non_profit_sp.each do |sponsor| %>
+									<li class="show"  style="width: 100%">
+										<%= link_to image_tag(sponsor.image.url, :border=>0 ), sponsor.site_sanitized, :target=>'_blank', :class=>'sidebar_sponsor' %>															
+									</li>
+								<% end %>						   
+							  </ul>
+							</div>						
+			        </div>
+		      </div>
+		      <%end%>
+		     <%end%> 	
+		       <div class="sidecontent_block">
+		           <h3><b>Sponsors</b></h3>
+					<ul style="width: 100%">
+						<% @non_profit_sp_list.each do |sponsor|%>
+							<%if !sponsor.site.blank? %>									 
+								 <li  style="width: 100%"><%= link_to sponsor.name, sponsor.site_sanitized, :target=>'_blank', :class=>'sidebar_sponsor' %></li>
+							<%else%>
+								<li  style="width: 100%"><%= link_to sponsor.name, "#", :class=>'sidebar_sponsor' %></li>						
+							<%end%>
+						<%end%>	
+					</ul>
+		      </div>
+		    </div>	   
+	 	 </div>	
+	  </div>	
+	<%end%>	
+	
+<div class="nonprofit_info">
+	<div><h2><%= @non_profit.name %></h2></div>
+	
+	<% if !@non_profit.logo_file_name.nil? %>	
+		<div style="height: auto">
+			<%= link_to image_tag(@non_profit.logo.url), @non_profit.site_sanitized, :target => '_blank' %>
+		</div>
+	<%end%>	
+	
+</div>
+
+	
+	<%= render :partial=>"blocks/blocks", :locals=>{:rooms=> @rooms, :reservations => @reservations, :non_profit => @non_profit, :selection_room => @selection_room} %>
+		
+</div>

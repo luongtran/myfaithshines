@@ -1,0 +1,99 @@
+#spread{
+  
+  .containers{
+     p{
+      display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      font-size: 12px;
+      text-align: justify;
+    }
+    
+    p b{
+      color: #5E6469;
+    }
+    
+    #dog_img{
+      float:right;
+      width: 220px;
+    }
+    
+    .li{
+      margin-left: 20px;
+    }
+    
+  }
+
+  
+  .holders{
+    float: left;
+    margin: 15px 0 0;
+    padding: 0 0 0 40px;
+    width: 960px;
+    
+    
+      input{
+        display: block;
+        height: 14px;     
+        overflow: hidden;
+        padding: 0 5px;
+        width: 150px;
+      }
+  
+   
+      p{
+        font: bold 15px Tahoma, Geneva, sans-serif;
+        display: block;
+        padding: 0 5px;
+        width: 150px;
+        text-align: center;
+      }
+      
+      
+      .block_1{
+        width: auto;
+        float: left;
+        margin: 0;
+        padding: 0 0 50px;
+      }
+      
+      .block_2{
+        width: auto;
+        float: left;
+        margin: 0 40px 0 0;
+        padding: 0;
+        margin-top: 64px;
+      }
+      
+      .block_3{
+        width: auto;
+        float: left;
+        margin: 15px 50px 0 0;
+        padding: 0 0 20px;
+      }
+      
+      .block_4{
+        width: auto;
+        float: left;
+        margin: 0 40px 0 0;
+        padding: 0;
+      }
+      
+      
+      .col_1{
+        float: left;
+        width: 300px;
+        overflow: hidden;
+      
+      }
+      
+      .col_2{
+        float: left;
+        width: 650px;
+      }
+      
+  }
+  
+}

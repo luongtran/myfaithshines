@@ -1,0 +1,15 @@
+<h2>Resend confirmation instructions</h2>
+
+<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f| %>
+  <%= devise_error_messages! %>
+	<table>
+		<tr><td><%= f.label :email %>:</td><td><%= f.email_field :email %></td></tr>
+	</table>
+	
+
+  	<div id="sign_in_button">
+  		<%= f.submit "Resend confirmation instructions", :id=>'button', :class=> 'button' %>
+  	</div>
+<% end %>
+
+<%= render "links" %>

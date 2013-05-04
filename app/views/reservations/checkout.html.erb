@@ -1,0 +1,84 @@
+
+<div>	
+	<h2>Checkout</h2>	
+	<p style="font-size: 14px">You have chosen to purchase the following Good Dog Blocks. Please 
+	review your order and make any necessary changes.  </p>
+	
+	<p style="margin-bottom: 50px;margin-top: 20px;font-size: 14px">This image <img src="/assets/footprint.png" alt="" style="width: 30px"> will appear in the blocks you have selected until 
+		your payment has been processed.</p>
+		
+	<div id="gift_info" style="text-align: left">
+		<table style="width: 650px">	
+			<thead>
+				<tr>
+					<td> <div class="info_title">Block Name</div> </td>
+					<td> <div class="info_title">Price</div></td>
+					<td> <div class="info_title">Payment method</div></td>
+					<td> <div class="info_title">Total Cost</div></td>
+				</tr>			
+			</thead>	
+			<tbody>
+				<% @reserv_list.each do |r| %>
+				<% dog = Dog.find(r.dog_id) %>
+				<tr>
+					<td><%= dog.name %></td>	
+					<td>$ <%= r.block_price.to_i %></td>																		
+					<td><%= @payment_method %></td>
+					<td>$ <%= r.total_price.to_i %></td>	
+					<td><%= link_to 'Delete', delete_reservation_path(r.id), :class => 'delete_link', :id_reserv => r.id %></td>									
+				</tr>					
+				<%end%>
+			</tbody>
+		</table>
+	</div>
+	
+	<table style="margin-top: 55px">
+		<tr>
+			<td style="color: #FF9506; width: 385px">Total Due</td>
+			<td>$<%= @total_due.to_i %></td>
+		</tr>
+	</table>
+	
+	<div style="margin-top: 60px;">
+		<p style=" font-size: 13px; float: left;display: inline-block;width: 500px;color: green;">
+		If there is a balance due, you will be transferred to PayPal once you click “Purchase”. <br />
+		Note: You do NOT need a PayPal account to use this option.  
+		If there is no balance due, your Good Dog Blocks will be activated once you click 
+		“Purchase”. </p>
+
+			<div>		
+				<% if @total_due > 0 %>
+				<%= form_tag 'https://www.paypal.com/cgi-bin/webscr', :id=>'paypal_form' do %>
+					<div>			  
+					  <input type="hidden" name="cmd" value="_cart"> 
+					  <input type="hidden" name="upload" value="1">
+					  <input type="hidden" name="return" value="<%= confirm_purchase_url %>" >
+					
+					  <% count = 0%>
+					  <% @reserv_list.each do |r|%>
+					  <%count += 1%>  
+					  	  <input type="hidden" name="amount_<%=count%>" value=<%= r.total_price %> > 
+					  	  <input type="hidden" name="item_name_<%=count%>" value="Purchase block" >
+					  <%end%>
+				
+					  <input type="hidden" id ="invoice" name="invoice" value="<%= @cart.id %>" >
+ 					  <input type="hidden" name="business" value="info@boxofficeblocks.com"> 
+					  <input type="hidden" name="notify_url" value= "<%= payment_notification_url %>" >
+				
+					  <input type="submit" value="Purchase" id="button" class="button"> 
+					  
+					</div>
+				<%end%>
+				<%else%>
+					<input type="hidden" id="reserve" value="<%= @cart.id %>" >
+					<%= button_to "Purchase", confirm_purchase_path, :class=>'button', :id=>'confirm_purchase'%>	
+					<!-- <%= button_tag "Checkout", :class=>'button GiftSubmit', :id=>'confirm_purchase'%>	-->	
+				<%end%>		
+			</div>
+		
+		
+	</div>
+	
+</div>
+
+

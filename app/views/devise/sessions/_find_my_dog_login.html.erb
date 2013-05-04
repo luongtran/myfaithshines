@@ -1,0 +1,19 @@
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name, :find_my_dog=>true)) do |f| %>
+  	<%= devise_error_messages! %>
+  	<input type="hidden" value="1" id="findmydog" name="findmydog" />
+	<table>
+		<tr id="registration"><td><%= f.label :email %></td><td><%= f.email_field :email %></td></tr>
+		<tr id="registration"><td><%= f.label :password %></td><td> <%= f.password_field :password %></td></tr>
+		<!--<tr><td></td><td style="color: orange">
+			<% if devise_mapping.rememberable? -%>
+     			<div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+ 	 		<% end -%></td></tr>
+		-->
+	</table>
+	 
+
+  <div id="sign_in_button"><%= f.submit "Next", :id=>'button', :class=> 'button' %></div>
+<% end %>
+
+<%= link_to "Forgot your password?", new_password_path(resource_name), :class=>'forgot_password' %><br />

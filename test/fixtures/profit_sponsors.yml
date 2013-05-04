@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  non_profit_id: 1
+  sponsor_id: 1
+
+two:
+  non_profit_id: 1
+  sponsor_id: 1

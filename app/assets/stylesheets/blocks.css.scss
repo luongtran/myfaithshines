@@ -1,0 +1,258 @@
+// Place all the styles related to the Blocks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+p{
+  margin: 0;
+}
+
+.lateral {
+	font-size:14px;
+	font-weight:bold;
+	color:lightgrey;
+}
+.dog a{
+	background: url("../assets/paw.png");
+	float:left;
+  height:40px;
+  width:40px;
+	
+	z-index: 1;
+	background-size:100%;
+}
+
+.dog-readonly a{
+  background: url("../assets/paw.png");
+  float:left;
+  height:40px;
+  width:40px;
+  z-index: 1;
+}
+
+.dog-title-up, .dog-title-up-readonly {
+  float:left;
+  width:40px; 
+  z-index: 1;
+  text-align:center;
+}
+
+
+.dog-title-right-readonly, .dog-title-right {
+  float:left;
+  z-index: 1;
+  text-align:center;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  
+  li {
+    height:30px;
+    padding-top:10px;
+    margin-right:27px;
+  }
+
+}
+
+.dog.pickme a:hover {
+  background: url("../assets/pickme.png") !important;
+  background-size: 100%;
+}
+
+.dog a:hover {
+  background: url("../assets/buy.png");
+  background-size: 100%;
+}
+
+#wrapper_blocks {
+  margin-bottom:20px;
+  .nonprofit_info{
+    text-align: center;
+    margin-bottom:10px;
+    img{
+      width:auto;
+      height:auto;
+    } 
+  }
+      
+  .blocks_wrapper{
+      width: 800px;
+      margin: 0 auto;
+   }
+   
+   
+   #sidebar_block{
+     border: 1px solid lightgrey;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     padding:10px;
+     float: right;
+     width: 90px; 
+     margin-top: 140px;   
+   }  
+         
+   #section_block{
+     height: auto;
+     margin-top: 0px;
+     overflow: hidden;   
+    }   
+    .sectionwrapper_block{          
+      height: auto;
+    }  
+       
+     #slidercontainer_block{
+       width: 90px;       
+       height: 100px;
+       padding-top: 0px;
+          
+         ul{
+            list-style-type: none;
+          }               
+         .img_fixed{
+            height: 60px;
+            width: 90px;      
+               img{             
+                padding: 4px;
+                background: white;
+                height: 60px;
+                width: 60px;  
+              }     
+            li.show{
+              text-align: center;
+            }
+          }
+          
+                      
+            /* rotator in-page placement */
+            div.rotator_block {
+              position:relative;
+              height:60px;
+            }
+            /* rotator css */
+             div.rotator_block ul{
+              padding: 0;
+              margin: 0;
+            }
+            div.rotator_block ul li {
+              float:left;
+              position:absolute;
+              list-style: none;
+            }
+            /* rotator image style */ 
+            div.rotator_block ul li img {
+            
+              padding: 4px;
+              background: #FFF;
+              height:60px;
+              width: 60px;
+            }
+            
+            div.rotator_block ul li.show {
+              z-index:500;
+            }
+          
+         }
+         
+      .sidecontent_block{       
+         height: auto;
+         overflow: hidden;
+          
+          ul{
+           list-style-type: none;
+           margin: 0 auto;
+              
+            li a{
+            
+              font-family: "Trebuchet MS";
+              font-size: 13px;
+              text-decoration: none;
+             }
+          }
+       }         
+}
+
+
+.sidebar_sponsor{
+  text-align: center;display: inline-block;width: 100%;
+}
+
+.sidebar_sponsor:hover{
+  color: #FFAD00;
+}
+
+#grid-content{
+    width:860px;
+}
+
+#grid-headers {
+  width:840px;
+  position:relative;
+  height:20px;
+}
+
+
+#grid-container {
+  width:800px;
+  float:left;
+  position:relative;
+}
+
+#grid-container-readonly {
+  width:800px;
+  float:left;
+  position:relative;
+}
+
+
+#grid-content-readonly{
+    width:860px;
+    
+  .selected{
+    border:2px solid orange;
+  }
+  
+  .place_option{
+    position:absolute;
+    z-index:999;
+    background-color:lightslategrey;
+    width:145px;
+    height:130px;
+  }
+  
+  .place_option_button{
+   width: 128px;
+   margin-top: 10px;
+   margin-left: 7px;
+   cursor:pointer;
+  }
+  
+}
+
+.ui-tooltip-content {
+  line-height: 16px;
+  font-size:16px;
+  font-weight:bold;
+  background:white;
+}
+
+#simplemodal-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#simplemodal-container {
+  border:solid 1px lightgrey !important;
+}
+
+#simplemodal-container a.modal-close {
+  background:url(x.png) no-repeat; /* adjust url as required */
+  width:25px;
+  height:29px;
+  display:inline;
+  z-index:3200;
+  position:absolute;
+  top:0px;
+  right:0px;
+  cursor:pointer;
+}
+
+

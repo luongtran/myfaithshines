@@ -1,0 +1,99 @@
+#promotions, #legal_mumbo {  
+ 
+.info_title{
+    text-align:center; 
+}    
+   
+p{
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-size: 13px;
+  font-family: "Trebuchet MS", Arial;
+}
+
+}
+
+.conteiner{
+  margin-top:35px;
+  
+  ol li{
+  margin-left: 20px;
+  }
+
+}
+
+.mydog_image{
+ width:50px;
+ height:50px;
+ float:left;
+ display:inline-block;
+ img{
+   width:50px;
+   height:50px;
+ } 
+}
+
+
+#dotted_line{
+   margin-bottom:10px;
+   width:780px;
+   height:10px;
+   display:inline-block;
+   border-bottom: 1px dotted #CCC;
+}
+
+#mydog{
+  float:left;
+  display:inline-block;
+  width:206px;
+  height:50px;
+ 
+  margin-left:10px;
+
+  
+  .mydog_name{
+    width:100px;
+    margin-left:30px
+  }
+  
+  p{
+    padding-top: 20px;
+  }
+  a:link{
+    margin-right: 10px;
+    text-decoration:none;  
+  }  
+  a:hover{
+      color:#ffad00;
+  }
+  
+}
+
+.select_div{
+  display: inline-block;
+  height: 43px;
+  padding-top: 25px;
+  text-align: right;
+  width: 740px;
+}
+.img_paw{
+ float: left;
+ display: inline-block; 
+ margin-right:13px;
+}
+.info_sponsor_text{
+  width:900px;
+  margin-left: 30px;
+  position:relative;
+  p{
+     font-family: "Trebuchet MS", Arial;
+     font-size:14px;
+  }
+}
+
+.sponsor_info_wrapper{
+  margin-bottom: 20px;
+}
+

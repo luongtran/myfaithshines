@@ -1,0 +1,62 @@
+  <%= stylesheet_link_tag  "popups/popups", :media => "all" %>
+
+<div class='dog-detail'>
+	
+	<h2><%= @dog.name %></h2>
+	
+	<div>
+		<img  src="<%= @dog.image %>"></img>
+	</div>
+	
+	<div class="tab_info">
+		<table>
+			
+			<% if !@dog.name.blank? %>
+				<tr>
+					<td><b>Dog Name:</b></td>
+					<td><%= @dog.name %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@dog.gender.name.blank? %>
+				<tr>
+					<td><b>Gender:</b></td>
+					<td><%= @dog.gender.name %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@dog.age.to_s.blank?%>
+				<tr>
+					<td><b>Dog Age:</b></td>
+					<td><%= @dog.age %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@dog.home.blank? %>
+				<tr>
+					<td><b>Location:</b></td>
+					<td><%= @dog.home %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@dog.motto.blank? %>
+				<tr>
+					<td><b>Motto:</b></td>
+					<td><%= @dog.motto %></td>
+				</tr>
+			<%end%>
+			
+			<% if !@dog.more.blank? %>
+				<tr>
+					<td><b>About:</b></td>
+					<td><%= @dog.more %></td>
+				</tr>
+			<%end%>
+			
+			
+								
+		</table>
+	</div>
+	
+</div>
+

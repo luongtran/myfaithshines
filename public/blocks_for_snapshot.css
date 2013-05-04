@@ -1,0 +1,78 @@
+// Place all the styles related to the Blocks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+p{
+  margin: 0;
+}
+
+.lateral {
+	font-size:14px;
+	font-weight:bold;
+	color:#D3D3D3;
+}
+.dog a{
+	background: url("../assets/paw.png");
+	float:left;
+	height:40px;
+	width:40px;
+	z-index: 1;
+}
+
+.dog-title-up {
+	float:left;
+	width:40px;	
+	z-index: 1;
+	text-align:center;
+}
+
+.dog-title-right {
+	float:right;
+	z-index: 1;
+	text-align:center;
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	margin-top:20px;
+	li {
+		height:30px;
+		padding-top:10px;
+		width:20px;
+	}
+}
+
+.dog a:hover {
+	background: url("../assets/buy.png");
+}
+
+#wrapper {
+	margin-bottom:20px;
+	table{
+        tr > td:first-child { 
+          width: 30px;
+        }
+      }
+}
+
+#grid-content {
+	width:820px;
+}
+
+#grid-headers {
+	width:840px;
+	position:relative;
+}
+
+#grid-container {
+	width:800px;
+	float:left;
+	position:relative;
+}
+
+.ui-tooltip-content {
+	line-height: 16px;
+	font-size:16px;
+	font-weight:bold;
+	background:white;
+}
+

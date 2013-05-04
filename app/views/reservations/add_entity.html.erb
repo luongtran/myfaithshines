@@ -1,0 +1,79 @@
+<% if flash[:error] %>
+     
+<% end %>
+
+<div id="add_entity_wrapper">
+	<h2>Which type of block are you creating?</h2>
+	<%= hidden_field_tag :existing_dog_type, @dog.dog_type_id%>
+	<%= hidden_field_tag :existing_dog_id, @dog.id%>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs_iknow">My Good Dog</a></li>
+			<li><a href="#tabs_memorial">Good Dog Memorial</a></li>
+			<li><a href="#tabs_wishihave">Good Dog I Wish I Had</a></li>
+		</ul>
+		<div id="tabs_memorial">
+			<%= render :partial=>'add_entity_fields', :locals=>{:type_id=>3}%>
+			
+		</div>
+		<div id="tabs_iknow">
+			<%= render :partial=>'add_entity_fields', :locals=>{:type_id=>1}%>  		
+		</div>
+		<div id="tabs_wishihave">
+				
+				<!-- Start Advanced Gallery Html Containers -->
+				
+				<div id="thumbs" class="navigation">
+					<ul class="thumbs noscript">
+						<% @virtual_dogs.each do |virtual_dog| %>
+						<li data-dogid="<%= virtual_dog.id %>">
+							<a class="thumb" name="leaf" href="<%= virtual_dog.image%>" title="<%= virtual_dog.name%>">
+								<div class="img_wrapper">
+									<img src="<%= virtual_dog.image.url(:thumb)%>" alt="Title #0" />
+								</div>								
+							</a>
+							<div class="caption">
+								
+								<div class="image-title"><%= virtual_dog.name%></div>
+								<% if !virtual_dog.age.nil? && virtual_dog.age.to_s.length > 0%>
+									<div class="image-desc">Age: <%= virtual_dog.age%></div>
+								<% end %>
+								<% if !virtual_dog.home.nil? && virtual_dog.home.to_s.length > 0%>
+									<div class="image-desc">Home: <%= virtual_dog.home%></div>
+								<% end %>
+								<% if !virtual_dog.motto.nil? && virtual_dog.motto.to_s.length > 0%>
+									<div class="image-desc">Motto: <%= virtual_dog.motto%></div>
+								<% end %>
+								<% if !virtual_dog.more.nil? && virtual_dog.more.to_s.length > 0%>
+									<div class="image-desc">More: <%= virtual_dog.more%></div>
+								<% end %>
+								
+								
+							</div>
+						</li>
+						
+						<% end %>
+						
+					</ul>
+				</div>
+				<div id="gallery" class="content">
+					<div id="controls" class="controls"></div>
+					<div class="slideshow-container">
+						<div id="loading" class="loader"></div>
+						<div id="slideshow" class="slideshow"></div>
+					</div>
+					<div id="caption" class="caption-container"></div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			
+		</div>
+		<div class="button_wrapper">
+			<%= button_tag "Next", :class=>'button', :id=>'submit_entity' %>
+		</div>
+	</div>
+	
+	
+	
+</div>
