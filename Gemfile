@@ -26,7 +26,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-gem "bourbon-3.1.6"
+
+gem "bourbon', '>= 3.1.6"
 gem "rails_config"
 gem 'unicorn'
 gem 'delayed_job_active_record'
