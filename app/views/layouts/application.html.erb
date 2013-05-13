@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="banner">
-	<a href="#" id="logo"><img src="/assets/gd_logo.jpg" height="114" alt="" title=""></a>
+	<a href="#" id="logo"><img src="/assets/mfs_logo.jpg" height="114" alt="" title=""></a>
 </div>
 	
 <div id="body_background">
@@ -34,7 +34,7 @@
 				<%= link_to "Home", root_path %> 
 			</li>
 			<li class="<%= current_class?(overview_path) %>">
-				<%= link_to 'The Big Picture', overview_path %>
+				<%= link_to 'Overview', overview_path %>
 			</li>			
 			<li class="<%= current_class?(getstarted_path) %>">
 				<%= link_to "Get Started", getstarted_path %> 
@@ -43,7 +43,7 @@
 				<%= link_to 'All Sponsors', all_sponsors_path %>				
 			</li>
 			<li class="<%= current_class?(find_my_dog_path) %>">
-				<%= link_to 'Find My Dog', find_my_dog_path %>				
+				<%= link_to 'Find My Block', find_my_dog_path %>				
 			</li>			
 			<li><%= link_to "Blog", 'http://iamagooddog.blogspot.com', :target => '_blank' %></li>		
 			<% if user_signed_in? %>
@@ -83,10 +83,10 @@
 					<h2><%= link_to('Spread the Word', spread_the_word_path) %></h2>
 				</li>	
 				<li>
-					<h2><%= link_to('Get Us Here', get_us_path) %></h2>
+					<h2><%= link_to('Contact Us', get_us_path) %></h2>
 				</li>	
 				<li>
-					<h2><%= link_to('Legal Mumbo Jumbo', legal_mumbo_path) %></h2>
+					<h2><%= link_to('Terms and Conditions', legal_mumbo_path) %></h2>
 				</li>	
 				<li>
 					<h2><%= link_to('Promotions', promotions_path) %></h2>
