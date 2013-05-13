@@ -1,6 +1,6 @@
 <h2><b>Find My Dog</b></h2>
 <% if current_user.nil? %>
-	<p>Sign-in here if you’d like to take a look at the Good Dog Blocks that you've 
+	<p>Sign-in here if you’d like to take a look at the Faith Blocks that you've 
 built.</p>
 	<div id="login_from_partial" style="margin-left: 147px;display: inline;float:left">
 		<%= render :partial=> 'devise/sessions/find_my_dog_login' %>  		
@@ -15,7 +15,7 @@ built.</p>
 	
 	<h2>WELCOME BACK!</h2>
 	<% if @user_rooms.blank? %>
-		<p>You have yet to build any Good Dog Blocks.</p>
+		<p>You have yet to build any Faith Blocks.</p>
 		<br />
 		<div class="selectnp">
 			<label> Please select an organization and get started now: </label><%= select_tag :id, options_from_collection_for_select(NonProfit.all, "id", "name") %><input class="button" id="getstarted_gonp" name="commit" type="submit" value="Go">

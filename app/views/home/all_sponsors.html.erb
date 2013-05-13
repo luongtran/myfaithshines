@@ -5,70 +5,14 @@
 	</div>
 	<div class="sponsors_list">
 		
-		<% if !@boonie_dogs.blank? %>			
-			<h3>Bonnie Dogs</h3>
-			<% @boonie_dogs.each do |sp| %>	
+		<% if !@fellowship_sponsors.blank? %>			
+			<h3>Fellowship Sponsor</h3>
+			<% @fellowship_sponsors.each do |sp| %>	
 			<div class="img_sp_conteiner"">			
 				<%= link_to image_tag(sp.image.url, :border=>0, :class => "img" ), sp.site_sanitized, :target => "_blank" %>												
 			</div>	
 			<%end%>
 			
-		<%end%>
-		
-		<% if !@lucky_dogs.blank? %>
-			<p><h3>Lucky Dogs</h3></p>
-			<% @lucky_dogs.each do |sp| %>
-			<div class="img_sp_conteiner">
-				<%= link_to image_tag(sp.image.url, :border=>0, :class => "img" ), sp.site_sanitized, :target => "_blank" %>
-			</div>				
-			<%end%>
-		<%end%>
-		
-		<% if !@working_dogs.blank? %>			
-			<h3>Working Dogs</h3>
-			<% @working_dogs.each do |sp| %>	
-			<div class="img_sp_conteiner"">			
-				<%= link_to image_tag(sp.image.url, :border=>0, :class => "img" ), sp.site_sanitized, :target => "_blank" %>												
-			</div>	
-			<%end%>
-			
-		<%end%>
-		
-		<% if !@hot_dogs.blank? %>	
-			<h3>Hot Dogs</h3>			
-			<% @hot_dogs.each do |sp| %>
-				<div class="img_sp_conteiner">
-					<%= link_to image_tag(sp.image.url, :border=>0, :class => "img" ), sp.site_sanitized, :target => "_blank" %>
-				</div>	
-			<%end%>	
-		<%end%>
-		
-		<% if !@big_dogs.blank? %>	
-			<h3>Big Dogs</h3>			
-			<% @big_dogs.each do |sp| %>
-				<div class="img_sp_conteiner">
-					<%= link_to image_tag(sp.image.url, :border=>0, :class => "img" ), sp.site_sanitized, :target => "_blank" %>
-				</div>	
-			<%end%>	
-		<%end%>
-		
-		<% if !@top_dogs.blank? %>			
-			<h3>Top Dogs</h3>
-			<% @top_dogs.each do |sp| %>	
-			<div class="img_sp_conteiner"">			
-				<%= link_to image_tag(sp.image.url, :border=>0, :class => "img" ), sp.site_sanitized, :target => "_blank" %>												
-			</div>	
-			<%end%>
-			
-		<%end%>
-		
-		<% if !@the_dogs.blank? %>	
-			<h3>"THE" Dogs</h3>			
-			<% @the_dogs.each do |sp| %>
-				<div class="img_sp_conteiner">
-					<%= link_to image_tag(sp.image.url, :border=>0, :class => "img" ), sp.site_sanitized, :target => "_blank" %>
-				</div>	
-			<%end%>	
 		<%end%>
 		
 		
