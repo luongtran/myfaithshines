@@ -91,7 +91,7 @@ class HomeController < ApplicationController
       @non_profit = NonProfit.find_by_id(nonprofit.id)
       @rooms = @non_profit.rooms
       html_to_show = render_to_string :partial => 'blocks/blocks.html.erb'
-      html_to_show = "<html><head><style>" + cssstring + "</style></head><body>" + html_to_show.gsub('<span class="img_placeholder"></span>', '<img src="http://localhost:3000/assets/paw.png">') + "</body></html>"
+      html_to_show = "<html><head><style>" + cssstring + "</style></head><body>" + html_to_show.gsub('<span class="img_placeholder"></span>', '<img src="http://localhost:3000/assets/MFS_Block_Image.jpg">') + "</body></html>"
       kit = IMGKit.new(html_to_show, quality: 50, zoom: 0.2)
       img = kit.to_img(:png)
       file = Tempfile.new(["template_#{nonprofit.id.to_s}", 'png'], 'tmp', :encoding => 'ascii-8bit')
@@ -105,7 +105,7 @@ class HomeController < ApplicationController
     @rooms = @non_profit.rooms
 
     html_to_show = render_to_string :partial => 'blocks/blocks.html.erb'
-    html_to_show = "<html><head><style>" + cssstring + "</style></head><body>" + html_to_show.gsub('<span class="img_placeholder"></span>', '<img src="http://localhost:3000/assets/paw.png">') + "</body></html>"
+    html_to_show = "<html><head><style>" + cssstring + "</style></head><body>" + html_to_show.gsub('<span class="img_placeholder"></span>', '<img src="http://localhost:3000/assets/MFS_Block_Image.jpg">') + "</body></html>"
     kit = IMGKit.new(html_to_show, quality: 50, zoom: 0.2)
     #kit.stylesheets << 'http://localhost:3000/assets/home.css'
     
