@@ -69,9 +69,9 @@ body
  // background: url("../assets/menu.gif");
   //background-position: 16px -160px;
   //background-repeat: no-repeat;      
-    background: -webkit-gradient(radial, 80% 20%, 0, 80% 40%, 100, from(#f6e6b4), to(#ffad00)); /* Safari 4-5, Chrome 1-9 */
-    background: -webkit-radial-gradient(75% 43%, closest-corner, #f6e6b4, #ffad00);   /* Safari 5.1+, Chrome 10+ */
-    background: -moz-radial-gradient(80% 20%, closest-corner, #f6e6b4, #ffad00);   /* Firefox 3.6+ */
+    background: -webkit-gradient(radial, 80% 20%, 0, 80% 40%, 100, from(#603912), to(#C89305)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-radial-gradient(75% 43%, closest-corner, #603912, #C89305);   /* Safari 5.1+, Chrome 10+ */
+    background: -moz-radial-gradient(80% 20%, closest-corner, #603912, #C89305);   /* Firefox 3.6+ */
 }
 #header_layout ul.navigation li a{
   background: url("../assets/menu-separator.gif");
@@ -1073,7 +1073,7 @@ body
 }
 #footer_layout
 {
-  background-color: #310000;
+  background-color: #603912;
   background-image: none;
 }
 #footer_layout .section_footer
@@ -1146,7 +1146,7 @@ body
 }
 #footer_layout #footnote
 {
-  background-color: #ffad00;
+  background-color: #C89305;
 }
 #footer_layout #footnote .section_footer
 {
