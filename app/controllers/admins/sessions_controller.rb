@@ -33,7 +33,7 @@ class Admins::SessionsController < Devise::SessionsController
       if params[:findmydog].nil?
         respond_with resource, :location => after_sign_in_path_for(resource)
       else
-        respond_with resource, :location => find_my_dog_path
+        respond_with resource, :location => find_my_block_path
       end
       
     else

@@ -5,9 +5,9 @@ class ApplicationController < ActionController::Base
 
   before_filter :store_location
   def store_location
-    if (params[:find_my_dog])
+    if (params[:find_my_block])
       url = #calculate the url here based on a params[:token] which you passed in
-      session[:user_return_to] = find_my_dog_path
+      session[:user_return_to] = find_my_block_path
     end
   end
 

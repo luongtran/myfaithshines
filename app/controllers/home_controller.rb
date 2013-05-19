@@ -2,7 +2,7 @@ require 'rest_client'
 require 'stringio'
 
 class HomeController < ApplicationController 
-  #before_filter :authenticate_user!, :only => [ 'find_my_dog']
+  #before_filter :authenticate_user!, :only => [ 'find_my_block']
   
   
   def index
@@ -67,7 +67,7 @@ class HomeController < ApplicationController
     
   end
   
-  def find_my_dog
+  def find_my_block
     if !current_user.blank?
       @user_rooms = Room.where(:user_id => current_user.id)
     else

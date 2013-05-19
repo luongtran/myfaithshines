@@ -44,7 +44,7 @@ GoodDog::Application.routes.draw do
   match 'overview', :to => 'home#overview', :as => 'overview'
   match 'promotions', :to => 'home#promotions', :as => 'promotions'
   match 'info_sponsors', :to => 'home#info_sponsors', :as => 'info_sponsors'
-  match 'find_my_dog', :to => 'home#find_my_dog', :as => 'find_my_dog'
+  match 'find_my_block', :to => 'home#find_my_block', :as => 'find_my_block'
   
   match '/save_snapshot/:non_profit_id', :to => 'non_profits#save_snapshot', :as => :save_snapshot
   
