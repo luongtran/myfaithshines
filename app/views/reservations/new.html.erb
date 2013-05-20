@@ -33,16 +33,9 @@
 
 	<div style="clear:both"></div>
 	<%if @isFundRaiser%>
-		<p style="color: green; margin-top: 10px;">You can only redeem one gift code at time but once you build the first block, you can easily duplicate   
-		your Faith block and redeem additional codes by going to the Get Started page.
-		Please redeem the full value of the gift code. This system does not hold the unused balance as a 
-		credit. Blocks for this Non‐Profit are being sold directly by the organization and are not available for purchase here. </p>
+		<p style="color: green; margin-top: 10px;">You can only redeem one gift code at time but once you build the first block, you can easily duplicate your Faith Block and redeem additional codes by going to the Get Started page. Please redeem the full value of the gift code. This system does not hold the unused balance as a credit. Example: for a 2X2 gift code, select a configuration that is valued at 2X2 or more. You will be directed to PayPal for any amount due beyond the value of the gift code. </p>
 	<%else%>
-		<p style="color: green; margin-top: 10px;">You can only redeem one gift code at time but once you build the first block, you can easily duplicate   
-		your Faith block and redeem additional codes by going to the Get Started page.
-		Please redeem the full value of the gift code. This system does not hold the unused balance as a 
-		credit. Example: for a $4 gift code, select a configuration that is valued at $4 or more. You will be 
-		directed to PayPal for any amount due beyond the value of the gift code. </p>
+		<p style="color: green; margin-top: 10px;">You can only redeem one gift code at time but once you build the first block, you can easily duplicate your Faith Block and redeem additional codes by going to the Get Started page. Please redeem the full value of the gift code. This system does not hold the unused balance as a credit. Example: for a 2X2 gift code, select a configuration that is valued at 2X2 or more. You will be directed to PayPal for any amount due beyond the value of the gift code.</p>
 	<%end%>
 
 </div>
@@ -50,9 +43,9 @@
 
 <h2>Select your block size</h2>
 
-<p class="important">Please select the number of Faith Blocks you want to purchase. If you don't see the configuration you want, go back to the main page and select a different block. Certain configurations will not be available with certain blocks as they may overlap onto an already occupied block or run off the edge. </p>
+<p class="important">Please select the number of Faith Blocks you want to purchase. If you don't see the configuration you want, go back to the main page and select a different block. Certain configurations will not be available with certain blocks as they may overlap onto an already occupied block or run off the edge.</p>
 
-<p class="important">Before continuing, please be sure that the photo you wish to upload is available on your computer. If you don't have a photo to upload, select a scripture on the next page and you will be presented with a list of scriptures to choose from.</p>
+<p class="important">Before continuing, please be sure that the photo you wish to upload is available on your computer.</p>
 
 <%- @room_options.each do |option| %>
         <div class="<%= option.enabled ? 'option-container': 'option-container-disabled' %>">
