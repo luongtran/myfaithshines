@@ -13,23 +13,18 @@
 			<td> <%= f.number_field :age %></td>		
 		</tr>
 	<%end%>
-	<tr>
-		<td> <%= f.label :gender %>: </td>
-		<td> <%= f.select :gender_id, options_for_select(Gender.all.map { |gender| [gender.name, gender.id] }) %>  </td>		
-	</tr>
 			
 	<tr>
-		<td> <%= f.label :home %>: </td>
+		<td> Home Town: </td>
 		<td> <%= f.text_field :home %> </td>
 	</tr>
 	<tr>
-		<td> <%= f.label :motto %>: </td>
-		<td> <%= f.text_field :motto %> </td>
+		<td> How the Lord has touched my life: </td>
+		<td> &nbsp;</td>
 	</tr>
 	<tr>
-		<td> <%= f.label :more %>: </td>
-		<td> <%= f.text_area :more %> </td>
-	</tr>
+		<td>&nbsp;</td>
+		<td><%= f.text_area :more %> </td>
 	<tr>
 		<td> <%= f.label :image %>: </td>
 		<td>  <%= f.file_field :image %> Max size: 6MB </td>

@@ -30,7 +30,7 @@
 	<%else%>
 		<h2>WELCOME BACK!</h2>
 		<div class="selectnp">
-			<label>Please select a non-profit organization to support: </label><%= select_tag :id, options_from_collection_for_select(NonProfit.all(:order=> "name asc"), "id", "name") %><input class="button" id="getstarted_gonp" name="commit" type="submit" value="Go">
+			<label>Please select a church to support: </label><%= select_tag :id, options_from_collection_for_select(NonProfit.all(:order=> "name asc"), "id", "name") %><input class="button" id="getstarted_gonp" name="commit" type="submit" value="Go">
 		</div>
 		<br />
 		<br />
