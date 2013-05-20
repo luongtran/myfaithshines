@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default :from => "Good Dog Team <support@luckyheadfilms.com>"
+  default :from => "My Faith Shines Team <support@tintedglassfilms.com>"
   
 =begin  def registration_confirmation(mail, user, transaction_id, price, numer_blocks, method)   
     email_list = mail.addresses.split(',') 

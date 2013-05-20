@@ -13,21 +13,14 @@
 			
 			<% if !@dog.name.blank? %>
 				<tr>
-					<td><b>Dog Name:</b></td>
+					<td><b>Name:</b></td>
 					<td><%= @dog.name %></td>
-				</tr>
-			<%end%>
-			
-			<% if !@dog.gender.blank? && !@dog.gender.name.blank? %>
-				<tr>
-					<td><b>Gender:</b></td>
-					<td><%= @dog.gender.name %></td>
 				</tr>
 			<%end%>
 			
 			<% if !@dog.age.to_s.blank?%>
 				<tr>
-					<td><b>Dog Age:</b></td>
+					<td><b>Age:</b></td>
 					<% if !@dog.age.to_s.blank? %>
 						<td><%= @dog.age %> years <td>
 					<%end%>
@@ -36,21 +29,19 @@
 			
 			<% if !@dog.home.blank? %>
 				<tr>
-					<td><b>Location:</b></td>
+					<td><b>Home Town:</b></td>
 					<td><%= @dog.home %></td>
-				</tr>
-			<%end%>
-			
-			<% if !@dog.motto.blank? %>
-				<tr>
-					<td><b>Motto:</b>:</td>
-					<td><%= @dog.motto %></td>
 				</tr>
 			<%end%>
 			
 			<% if !@dog.more.blank? %>
 				<tr>
-					<td><b>About:</b></td>
+					
+					<td><b>How the Lord has touched my life:</b></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
 					<td><%= @dog.more %></td>
 				</tr>
 			<%end%>

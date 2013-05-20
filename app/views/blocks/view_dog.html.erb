@@ -43,21 +43,14 @@
 			
 			<% if !@room.dog.home.blank? %>
 				<tr>
-					<td><b>Home:</b></td>
+					<td><b>Home Town:</b></td>
 					<td><%= @room.dog.home %></td>
-				</tr>
-			<%end%>
-			
-			<% if !@room.dog.motto.blank? %>
-				<tr>
-					<td><b>Motto:</b>:</td>
-					<td><%= @room.dog.motto %></td>
 				</tr>
 			<%end%>
 			
 			<% if !@room.dog.more.blank? %>
 				<tr>
-					<td><b>About:</b></td>
+					<td><b>How the Lord has touched my life:</b></td>
 					<td><%= @room.dog.more %></td>
 				</tr>
 			<%end%>
