@@ -50,7 +50,10 @@
 			
 			<% if !@room.dog.more.blank? %>
 				<tr>
-					<td><b>How the Lord has touched my life:</b></td>
+					<td colspan="2"><b>How the Lord has touched my life:</b></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
 					<td><%= @room.dog.more %></td>
 				</tr>
 			<%end%>

@@ -33,7 +33,7 @@
 		<table>	
 			<tr>
 				<td colspan="2"> 
-					<div class="info_title">Non Profit Information</div>
+					<div class="info_title">Church Information</div>
 				</td>
 			</tr>
 			<% if !@rev.non_profit.name.blank?%>
@@ -103,12 +103,15 @@
 		
 		<% if !@dog.motto.blank?%>
 		<tr>
-			<td><b>How the Lord has touched my life:</b>:</td>
+			<td colspan="2"><b>How the Lord has touched my life:</b>:</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
 			<td>	
 				<div class="info_review"><%= @dog.motto %></div>
 				
-			</td>			
-		</tr>
+			</td>
+			
 		<%end%>
 
 		
