@@ -66,9 +66,9 @@ body
 }
 #header_layout ul.navigation li.active
 {
- // background: url("../assets/menu.gif");
-  //background-position: 16px -160px;
-  //background-repeat: no-repeat;      
+    background: url("../assets/menu-separator.gif");
+    background-position: right;
+    background-repeat: no-repeat;
     background: -webkit-gradient(radial, 80% 20%, 0, 80% 40%, 100, from(#C89305), to(#603912)); /* Safari 4-5, Chrome 1-9 */
     background: -webkit-radial-gradient(75% 43%, closest-corner, #C89305, #603912);   /* Safari 5.1+, Chrome 10+ */
     background: -moz-radial-gradient(80% 20%, closest-corner, #C89305, #603912);   /* Firefox 3.6+ */
