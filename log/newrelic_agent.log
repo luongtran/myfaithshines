@@ -1,0 +1,43 @@
+# Logfile created on 2013-05-19 17:46:39 -0700 by logger.rb/31641
+[05/19/13 17:46:39 -0700 ubuntu (5352)] INFO : Dispatcher: thin
+[05/19/13 17:46:39 -0700 ubuntu (5352)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/19/13 17:46:39 -0700 ubuntu (5352)] WARN : Agent configured not to send data in this environment.
+[05/19/13 17:46:39 -0700 ubuntu (5352)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5352
+[05/19/13 17:46:39 -0700 ubuntu (5352)] INFO : Agent Log at /source/myfaithshines/log/newrelic_agent.log
+[05/19/13 17:46:40 -0700 ubuntu (5354)] INFO : Dispatcher: thin
+[05/19/13 17:46:40 -0700 ubuntu (5354)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/19/13 17:46:40 -0700 ubuntu (5354)] WARN : Agent configured not to send data in this environment.
+[05/19/13 17:46:40 -0700 ubuntu (5354)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5354
+[05/19/13 17:46:40 -0700 ubuntu (5354)] INFO : Agent Log at /source/myfaithshines/log/newrelic_agent.log
+[05/19/13 17:46:40 -0700 ubuntu (5352)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/19/13 17:46:40 -0700 ubuntu (5352)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[05/19/13 17:46:40 -0700 ubuntu (5354)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/19/13 17:46:40 -0700 ubuntu (5354)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[05/19/13 17:47:54 -0700 ubuntu (5379)] INFO : Dispatcher: thin
+[05/19/13 17:47:54 -0700 ubuntu (5379)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/19/13 17:47:54 -0700 ubuntu (5379)] WARN : Agent configured not to send data in this environment.
+[05/19/13 17:47:54 -0700 ubuntu (5379)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5379
+[05/19/13 17:47:54 -0700 ubuntu (5379)] INFO : Agent Log at /source/myfaithshines/log/newrelic_agent.log
+[05/19/13 17:47:54 -0700 ubuntu (5379)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/19/13 17:47:54 -0700 ubuntu (5379)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[05/19/13 17:47:55 -0700 ubuntu (5380)] INFO : Dispatcher: thin
+[05/19/13 17:47:55 -0700 ubuntu (5380)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/19/13 17:47:55 -0700 ubuntu (5380)] WARN : Agent configured not to send data in this environment.
+[05/19/13 17:47:55 -0700 ubuntu (5380)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5380
+[05/19/13 17:47:55 -0700 ubuntu (5380)] INFO : Agent Log at /source/myfaithshines/log/newrelic_agent.log
+[05/19/13 17:47:55 -0700 ubuntu (5380)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/19/13 17:47:55 -0700 ubuntu (5380)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[05/19/13 17:50:08 -0700 ubuntu (5449)] INFO : Dispatcher: thin
+[05/19/13 17:50:08 -0700 ubuntu (5449)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/19/13 17:50:08 -0700 ubuntu (5449)] WARN : Agent configured not to send data in this environment.
+[05/19/13 17:50:08 -0700 ubuntu (5449)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5449
+[05/19/13 17:50:08 -0700 ubuntu (5449)] INFO : Agent Log at /source/myfaithshines/log/newrelic_agent.log
+[05/19/13 17:50:08 -0700 ubuntu (5449)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/19/13 17:50:08 -0700 ubuntu (5449)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[05/19/13 17:50:09 -0700 ubuntu (5451)] INFO : Dispatcher: thin
+[05/19/13 17:50:09 -0700 ubuntu (5451)] ERROR : Unable to determine application name. Please set the application name in your newrelic.yml or in a NEW_RELIC_APP_NAME environment variable.
+[05/19/13 17:50:09 -0700 ubuntu (5451)] WARN : Agent configured not to send data in this environment.
+[05/19/13 17:50:09 -0700 ubuntu (5451)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5451
+[05/19/13 17:50:09 -0700 ubuntu (5451)] INFO : Agent Log at /source/myfaithshines/log/newrelic_agent.log
+[05/19/13 17:50:09 -0700 ubuntu (5451)] INFO : Detected Unicorn, please see additional documentation: https://newrelic.com/docs/troubleshooting/im-using-unicorn-and-i-dont-see-any-data
+[05/19/13 17:50:09 -0700 ubuntu (5451)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
