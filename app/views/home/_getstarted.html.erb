@@ -1,6 +1,6 @@
 
 <%= form_tag nonprofit_select_path + "?session_started=1" ,  :method=>'post' do %>        											
-	<span>Please select a non-profit organization: </span>
+	<span>Please select a church organization: </span>
 	<%= hidden_field_tag 'dog_id', dog_id %>				
 	<%= select_tag(:id, options_from_collection_for_select(nonprofits, :id, :name), :id=>'select_non') %>	  			
 	<%= submit_tag 'Go', :id=>'button', :class=> 'button go'%>		

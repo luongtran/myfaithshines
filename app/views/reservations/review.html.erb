@@ -70,7 +70,7 @@
 	<table>
 		<tr>
 			<td colspan="2"> 
-				<div class="info_title">Dog Information</div>
+				<div class="info_title">Information</div>
 			</td>
 		</tr>
 		<%if !@dog.name.blank?%>
@@ -81,15 +81,6 @@
 			</td>			
 		</tr>
 		<%end%>
-		<%if !@dog.gender.blank?%>
-		<tr>
-			<td><b>Gender:</b></td>
-			<td>						
-				<div class="info_review"><%= @dog.gender.name %></div>		
-			</td>			
-		</tr>
-		<%end%>
-		
 		
 		<% if !@dog.age.to_s.blank? %>
 			<tr>
@@ -103,7 +94,7 @@
 		
 		<% if !@dog.home.blank?%>
 		<tr>
-			<td><b>Home:</b></td>
+			<td><b>Home Town:</b></td>
 			<td>
 				<div class="info_review"><%= @dog.home %></div>												
 			</td>
@@ -112,7 +103,7 @@
 		
 		<% if !@dog.motto.blank?%>
 		<tr>
-			<td><b>Motto:</b>:</td>
+			<td><b>How the Lord has touched my life:</b>:</td>
 			<td>	
 				<div class="info_review"><%= @dog.motto %></div>
 				
