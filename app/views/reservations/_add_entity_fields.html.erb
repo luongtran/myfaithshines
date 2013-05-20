@@ -19,10 +19,10 @@
 		<td> <%= f.text_field :home %> </td>
 	</tr>
 	<tr>
-		<%if type_id.to_s == '3' %>
+		<%if type_id.to_s != '3' %>
 			<td colspan="2"> How the Lord has touched my life: </td>
 		<%end%>
-		<%if type_id.to_s != '3' %>
+		<%if type_id.to_s == '3' %>
 			<td colspan="2"> Favorite Memory: </td>
 		<%end%>
 	</tr>
