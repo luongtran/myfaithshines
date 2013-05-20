@@ -48,13 +48,13 @@
 				</tr>
 			<%end%>
 			
+			<br/>
 			<% if !@room.dog.more.blank? %>
 				<tr>
 					<td colspan="2"><b>How the Lord has touched my life:</b></td>
 				</tr>
 				<tr>
-					<td>&nbsp;</td>
-					<td><%= @room.dog.more %></td>
+					<td colspan="2"><%= @room.dog.more %></td>
 				</tr>
 			<%end%>
 			
