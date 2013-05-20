@@ -120,7 +120,7 @@ class PaymentNotification < ActiveRecord::Base
 
      #Email 2 Deliverable
       mail = MailMessage.new
-      mail.subject = 'A treat for YOU!'   
+      mail.subject = 'A gift for you!'   
       
       if dog.dog_type_id == DogType.virtual.id
         mail.attachments = File.read('public/certVirtualVD.pdf')
