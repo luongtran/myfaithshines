@@ -6,10 +6,11 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: GoodDog_development
+  database: myfaithshines 
   pool: 5
   timeout: 5000
   username: root
+  password: sunsh1n3
 
 #development:
 # adapter: sqlite3

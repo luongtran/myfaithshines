@@ -14,14 +14,16 @@
 class NonProfit < ActiveRecord::Base
   has_attached_file :snapshot, :storage => :s3, 
       :s3_credentials => "#{Rails.root}/config/s3.yml",
-            :styles => {
+      :s3_host_name=> "s3-us-west-2.amazonaws.com",
+      :styles => {
       :thumb => "80x80#" },
     :convert_options => {
       :thumb => "-quality 75 -strip" }
       
    has_attached_file :logo, :storage => :s3, 
       :s3_credentials => "#{Rails.root}/config/s3.yml", 
-            :styles => {
+      :s3_host_name=> "s3-us-west-2.amazonaws.com",
+      :styles => {
       :thumb => "80x80#" },
     :convert_options => {
       :thumb => "-quality 75 -strip" } 
