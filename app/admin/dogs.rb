@@ -9,7 +9,7 @@ ActiveAdmin.register Dog do
       f.input :home
       f.input :age
  #     f.input :motto
- #     f.input :more
+      f.input :more
  #     f.input :dog_type, :as => :select, :include_blank => false
       f.input :image, :as => :file
     end
@@ -25,9 +25,9 @@ ActiveAdmin.register Dog do
  #   column :motto do |dog|
  #      dog.more.nil? ? '' : truncate(dog.motto.html_safe, :length => 50)  
  #   end   
- #   column :more do |dog|
- #     dog.more.nil? ? '' : truncate(dog.more.html_safe, :length => 100)  
- #  end
+    column :more do |dog|
+      dog.more.nil? ? '' : truncate(dog.more.html_safe, :length => 100)  
+   end
  
    default_actions
   end 

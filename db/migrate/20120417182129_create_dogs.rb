@@ -6,7 +6,7 @@ class CreateDogs < ActiveRecord::Migration
       t.integer :gender_id
       t.integer :age
       t.string :home
-      t.string :motto
+#      t.string :motto
       t.text :more
       t.integer :dog_type_id
 

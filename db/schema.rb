@@ -101,10 +101,10 @@ ActiveRecord::Schema.define(:version => 20130403205017) do
 
   create_table "dogs", :force => true do |t|
     t.string   "name"
-    t.integer  "gender_id"
+#    t.integer  "gender_id"
     t.integer  "age"
     t.string   "home"
-    t.string   "motto"
+#    t.string   "motto"
     t.text     "more"
     t.integer  "dog_type_id"
     t.datetime "created_at",         :null => false

@@ -24,19 +24,19 @@
 one:
   name: MyString
   link: MyString
-  gender_id: 1
+#  gender_id: 1
   age: 1
   home: MyString
-  motto: MyString
+#  motto: MyString
   more: MyText
   dog_type_id: 1
 
 two:
   name: MyString
   link: MyString
-  gender_id: 1
+#  gender_id: 1
   age: 1
   home: MyString
-  motto: MyString
+#  motto: MyString
   more: MyText
   dog_type_id: 1

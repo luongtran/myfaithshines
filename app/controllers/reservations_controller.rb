@@ -195,7 +195,7 @@ class ReservationsController < ApplicationController
       @dog.name = session[:current_dog_name]
       @dog.age = session[:current_dog_age]
       @dog.home = session[:current_dog_home]
-      @dog.motto = session[:current_dog_motto]
+#      @dog.motto = session[:current_dog_motto]
       @dog.more = session[:current_dog_more]
       @dog.dog_type = DogType.mydog
     end
@@ -203,7 +203,7 @@ class ReservationsController < ApplicationController
     session[:current_dog_name] = ''
     session[:current_dog_age] = ''
     session[:current_dog_home] = ''
-    session[:current_dog_motto] = ''
+#    session[:current_dog_motto] = ''
     session[:current_dog_more] = ''
   end
   

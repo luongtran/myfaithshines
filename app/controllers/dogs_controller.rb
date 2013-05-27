@@ -16,7 +16,7 @@ class DogsController < ApplicationController
       session[:current_dog_name] = @dog.name  
       session[:current_dog_age] = @dog.age
       session[:current_dog_home] = @dog.home
-      session[:current_dog_motto] = @dog.motto
+#      session[:current_dog_motto] = @dog.motto
       session[:current_dog_more] = @dog.more
 
       full_message = []
@@ -46,7 +46,7 @@ class DogsController < ApplicationController
         session[:current_dog_name] = @dog.name  
         session[:current_dog_age] = @dog.age
         session[:current_dog_home] = @dog.home
-        session[:current_dog_motto] = @dog.motto
+#       session[:current_dog_motto] = @dog.motto
         session[:current_dog_more] = @dog.more
   
         full_message = []
@@ -70,7 +70,7 @@ class DogsController < ApplicationController
         session[:current_dog_name] = @dog.name  
         session[:current_dog_age] = @dog.age
         session[:current_dog_home] = @dog.home
-        session[:current_dog_motto] = @dog.motto
+ #       session[:current_dog_motto] = @dog.motto
         session[:current_dog_more] = @dog.more
   
         full_message = []
