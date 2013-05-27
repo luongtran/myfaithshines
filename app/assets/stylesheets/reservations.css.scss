@@ -285,7 +285,13 @@ p{
 
 #confirm_room{
   display: inline-block;
-  width: 626px;
+  width: 500px;
   position: relative;
   top: 50px;
+}
+
+#confirmation_image{
+  float: right; 
+  margin-top: 40px; 
+  margin-right: 100px;
 }
