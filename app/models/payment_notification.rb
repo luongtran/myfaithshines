@@ -121,14 +121,16 @@ class PaymentNotification < ActiveRecord::Base
      #Email 2 Deliverable
       mail = MailMessage.new
       mail.subject = 'A gift for you!'   
-      
       if dog.dog_type_id == DogType.virtual.id
-        mail.attachments = File.read('public/certVirtualVD.pdf')
+        #mail.attachments = File.read('public/certVirtualVD.pdf')
+		mail.attachments = File.read('public/MFS_Certificate.pdf')
       else 
         if dog.dog_type_id == DogType.mydog.id
-          mail.attachments = File.read('public/certGoodDogGD.pdf')
+          #mail.attachments = File.read('public/certGoodDogGD.pdf')
+		  mail.attachments = File.read('public/MFS_Certificate.pdf')
         else
-          mail.attachments = File.read('public/certMemorialGD.pdf')
+          #mail.attachments = File.read('public/certMemorialGD.pdf')
+		  mail.attachments = File.read('public/MFS_Certificate.pdf')
         end 
       end  
       user = User.find(room.user_id)
