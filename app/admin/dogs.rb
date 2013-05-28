@@ -10,7 +10,7 @@ ActiveAdmin.register Dog do
       f.input :age
  #     f.input :motto
       f.input :more
- #     f.input :dog_type, :as => :select, :include_blank => false
+      f.input :dog_type, :as => :select, :include_blank => false
       f.input :image, :as => :file
     end
     f.actions
