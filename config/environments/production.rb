@@ -75,7 +75,7 @@ GoodDog::Application.configure do
   config.action_mailer.smtp_settings = {
     :user_name => "boxofficeblocks",
     :password => "Knotstu1",
-    :domain => "good-dog.herokuapp.com",
+    :domain => "myfaithshines.com",
     :address => "smtp.sendgrid.net",
     :port => 587,
     :authentication => :plain,
