@@ -61,7 +61,7 @@ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.smtp_settings = {
     :user_name => "fercol",
     :password => "TopTier2011",
-    :domain => "good-dog.herokuapp.com",
+    :domain => "myfaithshines.com",
     :address => "smtp.sendgrid.net",
     :port => 587,
     :authentication => :plain,
