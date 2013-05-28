@@ -15,7 +15,7 @@ GoodDog::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -84,7 +84,7 @@ GoodDog::Application.configure do
   }
 
 config.middleware.use ExceptionNotifier, {
-    :email_prefix => "[GoodDog Error] ",
+    :email_prefix => "[My Faith Shines Error] ",
     :sender_address => 'info@luckyheadfilms.com',
     :exception_recipients => ['thadfield@gmail.com']
   }
