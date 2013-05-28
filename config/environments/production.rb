@@ -68,7 +68,7 @@ GoodDog::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
   
-  config.action_mailer.default_url_options = {:host => 'good-dog.herokuapp.com' }
+  config.action_mailer.default_url_options = {:host => 'localhost:3000' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -86,7 +86,7 @@ GoodDog::Application.configure do
 config.middleware.use ExceptionNotifier, {
     :email_prefix => "[GoodDog Error] ",
     :sender_address => 'info@luckyheadfilms.com',
-    :exception_recipients => ['anthfb@gmail.com']
+    :exception_recipients => ['thadfield@gmail.com']
   }
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
