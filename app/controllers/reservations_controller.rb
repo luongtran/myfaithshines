@@ -38,70 +38,75 @@ class ReservationsController < ApplicationController
     reservations = Reservation.active
     rooms = @non_profit.rooms
   
+    if (@non_profit.expanded)
+      max_height = 26
+    else
+      max_height = 21
+    end
+    
     @room_options.each do |option| 
-            if option.width + params[:x].to_i > 21 or option.height + params[:y].to_i > 21
-                if option.width + params[:x].to_i > 26 or option.height + params[:y].to_i > 26 #check if non_profit is expanded
-                    option.enabled = false              
+
+
+      if option.width + params[:x].to_i > 21 or option.height + params[:y].to_i > max_height
+        option.enabled = false        
+      else
+         option.enabled = true
+      end
+      
+      intersect = false
+ 
+      reservations.each do |reservation|                  
+        if !params[:reserve_id].nil? ? res = @my_reserve.id : res = ''                                    
+          if !reservation.id = res                                             
+                option_square_topLeft_x = params[:x].to_i #16
+                option_square_topLeft_y = params[:y].to_i #1
+                option_square_bottomRight_x = params[:x].to_i + option.width #21
+                option_square_bottomRight_y = params[:y].to_i + option.height #6
+                
+                reservation_square_topLeft_x = reservation.x #17
+                reservation_square_topLeft_y = reservation.y #1
+                reservation_square_bottomRight_x = reservation.x + reservation.width #21
+                reservation_square_bottomRight_y = reservation.y + reservation.height #5
+
+
+                if ( option_square_topLeft_x >= reservation_square_bottomRight_x or
+                     option_square_bottomRight_x <= reservation_square_topLeft_x or
+                     option_square_topLeft_y >= reservation_square_bottomRight_y or
+                     option_square_bottomRight_y <= reservation_square_topLeft_y )
+                        intersect = false
                 else
-                    option.enabled = true
-                end      
-            else
-               option.enabled = true
-            end
-            
-            intersect = false
-       
-            reservations.each do |reservation|                  
-              if !params[:reserve_id].nil? ? res = @my_reserve.id : res = ''                                    
-                if !reservation.id = res                                             
-                      option_square_topLeft_x = params[:x].to_i #16
-                      option_square_topLeft_y = params[:y].to_i #1
-                      option_square_bottomRight_x = params[:x].to_i + option.width #21
-                      option_square_bottomRight_y = params[:y].to_i + option.height #6
+                        intersect = true
+                        break
+                end                        
+            end   
+          end
+      end     
+      
+      if !(intersect) and !rooms.nil?
+              rooms.each do |room| 
+                      option_square_topLeft_x = params[:x].to_i
+                      option_square_topLeft_y = params[:y].to_i
+                      option_square_bottomRight_x = params[:x].to_i + option.width
+                      option_square_bottomRight_y = params[:y].to_i + option.height
                       
-                      reservation_square_topLeft_x = reservation.x #17
-                      reservation_square_topLeft_y = reservation.y #1
-                      reservation_square_bottomRight_x = reservation.x + reservation.width #21
-                      reservation_square_bottomRight_y = reservation.y + reservation.height #5
+                      room_square_topLeft_x = room.x
+                      room_square_topLeft_y = room.y
+                      room_square_bottomRight_x = room.x + room.width 
+                      room_square_bottomRight_y = room.y + room.height
+                      
 
-
-                      if ( option_square_topLeft_x >= reservation_square_bottomRight_x or
-                           option_square_bottomRight_x <= reservation_square_topLeft_x or
-                           option_square_topLeft_y >= reservation_square_bottomRight_y or
-                           option_square_bottomRight_y <= reservation_square_topLeft_y )
+                      if ( option_square_topLeft_x >= room_square_bottomRight_x or
+                           option_square_bottomRight_x <= room_square_topLeft_x or
+                           option_square_topLeft_y >= room_square_bottomRight_y or
+                           option_square_bottomRight_y <= room_square_topLeft_y )
                               intersect = false
                       else
                               intersect = true
                               break
-                      end                        
-                  end   
-                end
-            end     
-            
-            if !(intersect) and !rooms.nil?
-                    rooms.each do |room| 
-                            option_square_topLeft_x = params[:x].to_i
-                            option_square_topLeft_y = params[:y].to_i
-                            option_square_bottomRight_x = params[:x].to_i + option.width
-                            option_square_bottomRight_y = params[:y].to_i + option.height
-                            
-                            room_square_topLeft_x = room.x
-                            room_square_topLeft_y = room.y
-                            room_square_bottomRight_x = room.x + room.width 
-                            room_square_bottomRight_y = room.y + room.height
-                            
-                            if ( option_square_topLeft_x >= room_square_bottomRight_x or
-                                 option_square_bottomRight_x <= room_square_topLeft_x or
-                                 option_square_topLeft_y >= room_square_bottomRight_y or
-                                 option_square_bottomRight_y <= room_square_topLeft_y )
-                                    intersect = false
-                            else
-                                    intersect = true
-                                    break
-                            end 
-                    end
-            end                
-            option.enabled = !(intersect) if option.enabled
+                      end 
+              end
+      end                
+      option.enabled = !(intersect) if option.enabled
     end
 
     

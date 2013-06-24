@@ -11,9 +11,11 @@
 	<div class="tab_info">
 		<table>
 			<% if !@room.codes.blank? %>
-				<td style="color:#FF9506; font-weight:bold"> Sponsor:</td>
-				<% cod = @room.codes.first %>	
-				<td><%= link_to cod.sponsor.name, cod.sponsor.site_sanitized, :target => "_blank" %></td>	
+				<% cod = @room.codes.first %>
+				<% if !cod.sponsor.nil? %>
+					<td style="color:#FF9506; font-weight:bold"> Sponsor:</td>
+					<td><%= link_to cod.sponsor.name, cod.sponsor.site_sanitized, :target => "_blank" %></td>	
+				<% end %>
 			<%end%>
 			
 			<% if !@room.dog.name.blank? %>
