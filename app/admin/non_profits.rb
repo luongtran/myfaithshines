@@ -17,6 +17,7 @@ ActiveAdmin.register NonProfit do
       f.input :name
       f.input :email
       f.input :site
+	  f.input :zipcode
       f.input :non_profit_type, :as => :select, :include_blank => false
       f.input :logo, :as => :file, :hint => f.object.logo.blank? ?  f.template.content_tag(:span, "No Image Yet") : f.template.image_tag(f.object.logo.url()) 
     end
@@ -30,6 +31,7 @@ ActiveAdmin.register NonProfit do
     column :name
     column :email
     column :site
+	column :zipcode
     column :created_at
     column :updated_at
    # column :snapshot_file_name
@@ -60,6 +62,7 @@ ActiveAdmin.register NonProfit do
       row :email
       row :site
       row :state
+	  row :zipcode
       row :non_profit_type
       row :created_at
       row :updated_at

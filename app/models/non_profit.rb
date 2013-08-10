@@ -6,6 +6,7 @@
 #  name       :string(255)
 #  email      :string(255)
 #  site       :string(255)
+#  zipcode    :string(12)
 #  created_at :datetime        not null
 #  updated_at :datetime        not null
 #  state_id   :integer(4)

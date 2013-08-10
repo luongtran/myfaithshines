@@ -150,6 +150,7 @@ ActiveRecord::Schema.define(:version => 20130403205017) do
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
     t.integer  "state_id"
+	t.string   "zipcode"
     t.string   "snapshot_file_name"
     t.string   "snapshot_content_type"
     t.integer  "snapshot_file_size"
@@ -265,6 +266,7 @@ ActiveRecord::Schema.define(:version => 20130403205017) do
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
+	t.string   "zipcode"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
