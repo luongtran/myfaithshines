@@ -28,7 +28,13 @@ class NonProfit < ActiveRecord::Base
       :thumb => "80x80#" },
     :convert_options => {
       :thumb => "-quality 75 -strip" } 
-  
+      
+  acts_as_mappable :default_units => :miles,
+                   :default_formula => :sphere,
+                   :distance_field_name => :distance,
+                   :lat_column_name => :lat,
+                   :lng_column_name => :lng
+
   belongs_to :state
   has_many :rooms
   has_many :reservations
@@ -49,6 +55,11 @@ class NonProfit < ActiveRecord::Base
       return false   
     end 
   end 
+  
+  def self.search_near_by_zipcode(zipcode, radius)
+    #NonProfit.geo_scope(:origin=>zipcode, :conditions=>"distance<#{radius}")
+    NonProfit.geo_scope(:origin=>zipcode, :conditions=>"distance<#{radius}")
+  end
   
   include RestClient
 

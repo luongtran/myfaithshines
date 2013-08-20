@@ -6,13 +6,16 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-gem 'pg'
+#gem 'pg'
+
+gem 'mysql2'
 
 gem 'thin'
 gem 'eventmachine'
-group :development do
-   gem 'sqlite3'
-end
+
+# group :development do
+   # gem 'sqlite3'
+# end
 gem 'sass-rails',   '~> 3.2.3'
 
 # Gems used only for assets and not required
@@ -42,8 +45,13 @@ gem "meta_search",    '>= 1.1.0.pre'
 gem 'aws-s3', :require => 'aws/s3' 
 gem 'aws-sdk';
 
-gem 'jquery-rails'
-gem 'mysql2'
+gem 'jquery-rails', '~> 2.3.0'
+
+gem 'execjs'
+
+gem 'therubyracer'
+
+
 gem 'imgkit'
 gem 'websnap'
 
@@ -62,6 +70,20 @@ gem "exception_notification",
     :git => "git://github.com/rails/exception_notification.git",
     :require => "exception_notifier"
 gem 'formtastic', '< 2.2.0'
+
+gem 'geokit-rails3'
+
+group :test, :development do
+  gem "rspec-rails", "~>2.0"
+end
+
+group :test do
+  gem "factory_girl_rails"
+  gem "guard-rspec"
+  gem "capybara"
+  gem "wdm", '~>0.1'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

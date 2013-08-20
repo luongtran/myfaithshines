@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
   has_many :rooms
   has_many :reservations
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :zipcode, :location_radius
 
   def to_s
     email

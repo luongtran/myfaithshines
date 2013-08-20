@@ -140,9 +140,24 @@ $(document).ready(function() {
   });
   
   $("#sign_up_next").click(function(){
-  	$(".sign_up_confirm").show();
-  	$(".select_np_signup").show();
-  	$(this).hide();
+  	// $(".sign_up_confirm").show();
+  	// $(".select_np_signup").show();
+  	// console.log('test');
+  	// $.ajax({
+  		// type:"post",
+  		// url: "/search-near",
+  		// data: {'address':$('#address').val(), 'location_radius':$('#user_location_radius')},
+  		// dataType:'html',
+  		// success:function(response) {
+  			// console.log('ajax success');
+  			// $('#step2').html(response);
+  		// },
+  		// error:function() {
+  			// console.log("error");
+  		// }
+  	// });
+  	$('#new_user').submit();
+  	//$(this).hide();
   });
   
   

@@ -15,7 +15,7 @@ class Admins::RegistrationsController < Devise::RegistrationsController
         set_flash_message :notice, :signed_up if is_navigational_format?
         sign_up(resource_name, resource)
         if params[:non_profit].nil?
-          respond_with resource, :location => after_sign_up_path_for(resource)
+          respond_with resource, :location => non_profit_near_path
         else
           respond_with resource, :location => nonprofit_view_path(params[:non_profit])
         end

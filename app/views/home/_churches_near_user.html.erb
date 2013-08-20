@@ -1,0 +1,20 @@
+
+	<div id="list_organisations">
+		<% unless @non_profits.empty? %>
+		<% @non_profits.each do |non_profit|%>
+		<div class="item">
+			<div class="logo">
+				<%= link_to (nonprofit_view_path(non_profit)) do %>
+				<%= image_tag non_profit.logo.url(:thumb) %>
+				<% end %>
+			</div>
+			<div class="name">
+				<%= link_to  non_profit.name, nonprofit_view_path(non_profit) %>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<% end %>
+		<% end %>
+	</div>
+	

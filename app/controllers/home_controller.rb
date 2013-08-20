@@ -2,7 +2,7 @@ require 'rest_client'
 require 'stringio'
 
 class HomeController < ApplicationController 
-  #before_filter :authenticate_user!, :only => [ 'find_my_block']
+  before_filter :authenticate_user!, :only => [:search_churches_near_user]
   
   
   def index
@@ -29,6 +29,17 @@ class HomeController < ApplicationController
         :html => render_to_string(:partial => "home/getstarted", :locals => {:dog_id => dog_id, :nonprofits => nonprofits}),
         :id => params[:id]
     }
+    
+  end
+  
+  
+  def search_churches_near_user
+    
+    @non_profits = NonProfit.search_near_by_zipcode(current_user.zipcode, current_user.location_radius)
+    
+    respond_to do |format|
+      format.html
+    end
     
   end
   

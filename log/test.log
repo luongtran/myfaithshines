@@ -1,0 +1,745 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+Mysql2::Error: Table 'myfaithshines_test.non_profits' doesn't exist: SHOW FULL FIELDS FROM `non_profits`
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (22.8ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:47:18', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:47:18', NULL)
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:47:40', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:47:40', NULL)
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:47:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:47:59', NULL)
+  [1m[36m (10.7ms)[0m  [1mCOMMIT[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:48:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:48:20', NULL)
+  [1m[36m (10.9ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:48:40', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:48:40', NULL)
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:49:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:49:20', NULL)
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:49:57', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:49:57', NULL)
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (75.0ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:50:19', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:50:19', NULL)
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:50:41', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:50:41', NULL)
+  [1m[36m (14.5ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:51:00', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:51:00', NULL)
+  [1m[36m (29.9ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:51:22', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:51:22', NULL)
+  [1m[36m (3.7ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:51:42', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:51:42', NULL)
+  [1m[36m (39.0ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:52:04', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:52:04', NULL)
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.6ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:52:26', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:52:26', NULL)
+  [1m[36m (10.2ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:52:45', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:52:45', NULL)
+  [1m[36m (40.9ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.4ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:53:03', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:53:03', NULL)
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:54:42', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:54:42', NULL)
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (128.0ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:55:01', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:55:01', NULL)
+  [1m[36m (10.2ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (3.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (14.5ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:55:19', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:55:19', NULL)
+  [1m[36m (11.3ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.7ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.3ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:55:39', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:55:39', NULL)
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:55:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:55:59', NULL)
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:56:18', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:56:18', NULL)
+  [1m[36m (10.3ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (31.1ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:57:17', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:57:17', NULL)
+  [1m[36m (15.9ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.5ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 02:57:41', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 02:57:41', NULL)
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (2.5ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:01:30', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:01:30', NULL)
+  [1m[36m (17.1ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.8ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `latitude`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `longitude`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:01:48', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:01:48', NULL)
+  [1m[36m (10.9ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (3.9ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Mysql2::Error: Unknown column 'non_profits.lat' in 'field list': SELECT `non_profits`.*, 
+          (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+          COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+          SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+          AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:02:23', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:02:23', NULL)
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (71.5ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:02:42', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:02:42', NULL)
+  [1m[36m (13.7ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.9ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:05:35', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:05:35', NULL)
+  [1m[36m (21.2ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (1.0ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:05:54', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:05:54', NULL)
+  [1m[36m (10.2ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.8ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:06:13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:06:13', NULL)
+  [1m[36m (9.4ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:06:33', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:06:33', NULL)
+  [1m[36m (21.5ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:06:54', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:06:54', NULL)
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.5ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:07:13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:07:13', NULL)
+  [1m[36m (10.1ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.6ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (15.3ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:07:34', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:07:34', NULL)
+  [1m[36m (85.6ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+  [1m[35mNonProfit Load (0.8ms)[0m  SELECT `non_profits`.*, 
+ (ACOS(least(1,COS(0.7437694776500905)*COS(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*COS(RADIANS(non_profits.lng))+
+ COS(0.7437694776500905)*SIN(-1.2910342197737317)*COS(RADIANS(non_profits.lat))*SIN(RADIANS(non_profits.lng))+
+ SIN(0.7437694776500905)*SIN(RADIANS(non_profits.lat))))*3963.19)
+ AS distance FROM `non_profits` 
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:07:54', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:07:54', NULL)
+  [1m[36m (11.2ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:08:13', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:08:13', NULL)
+  [1m[36m (10.6ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:08:36', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:08:36', NULL)
+  [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:08:56', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:08:56', NULL)
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO `non_profits` (`created_at`, `email`, `expanded`, `lat`, `lng`, `logo_content_type`, `logo_file_name`, `logo_file_size`, `name`, `non_profit_type_id`, `site`, `snapshot_content_type`, `snapshot_file_name`, `snapshot_file_size`, `snapshot_updated_at`, `state_id`, `update_flag`, `updated_at`, `zipcode`) VALUES ('2013-08-20 03:09:16', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test', NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, '2013-08-20 03:09:16', NULL)
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+Google geocoding. Address: 12288. Result: <?xml version="1.0" encoding="UTF-8" ?>
+<kml xmlns="http://earth.google.com/kml/2.0"><Response>
+  <Status>
+    <code>610</code>
+    <request>geocode</request>
+  </Status>
+</Response></kml>
+
+Google was unable to geocode address: 12288
+Geocoder.us geocoding. Address: 12288. Result: 42.614852, -73.970812, Albany, NY, 12288

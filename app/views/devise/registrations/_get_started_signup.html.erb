@@ -1,18 +1,38 @@
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :id=>'get_started_signup') do |f| %>
   <%= devise_error_messages! %>
+  <div id="step1">
 	<table >
 		<tr id="registration"><td><%= f.label :email %></td><td><%= f.email_field :email %></td></tr>
+		<tr id="registration">
+			<td><%= f.label :zipcode %></td>
+			<td><%= f.text_field :zipcode %></td>
+		</tr>
+		<!-- <tr id="registration">
+			<td>Address</td>
+			<td><%= text_field_tag :address %></td>
+		</tr> -->
+		<tr id="registration">
+			<td><%= f.label :location_radius %></td>
+			<td><%= f.select :location_radius, [['10 miles', 10], ['25 miles', 25], ['50 miles', 50], ['100 miles', 100]] %></td>
+		</tr>
 		<tr id="registration"><td><%= f.label :password %></td><td> <%= f.password_field :password %></td></tr>
 		<tr id="registration"><td><%= f.label :password_confirmation %></td><td> <%= f.password_field :password_confirmation %></td></tr>
 		<tr><td></td><td></td></tr>
-		<tr id="registration" class="select_np_signup" style="display:none"><td><label>Select a Church</label></td><td><%= select_tag :non_profit, options_from_collection_for_select(NonProfit.all, "id", "name") %></td></tr>
+		<!-- <tr id="registration" class="select_np_signup" style="display:none">
+			<td><label>Select a Church</label></td>
+			<td><%= select_tag :non_profit, options_from_collection_for_select(NonProfit.all, "id", "name") %></td>
+		</tr> -->
 	</table>
 	
 
   	<div id="sign_in_button">
   		<a href="#" class="button" id="sign_up_next">Next</a>
   		<%= f.submit "Sign up", :id=>'button', :class=> 'button sign_up_confirm', :style=>"display:none" %>
+  	</div>
+  	</div>
+  	<div id="step2">
+  		
   	</div>
 <% end %>
 

@@ -33,6 +33,18 @@ class NonProfitsController < ApplicationController
     end
 
   end
+  
+   #==========================================
+   # Search by Name
+   # params: keyword
+   #==========================================
+  
+  def search_by_name
+    @non_profits = NonProfit.where("name like '%#{params[:keyword]}%'")
+    respond_to do |format|
+      format.js
+    end
+  end
    
   def select      
   

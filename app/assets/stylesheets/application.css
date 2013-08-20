@@ -137,3 +137,35 @@ padding: .2em .2em 0;
 	opacity: 0.2;
 	z-index: 88888;
 }
+
+#organisation {
+	width:800px;
+	float:left;
+	color:#DB7F0A;
+}
+
+#list_organisations {
+	float:left;
+	width:800px;
+	height:auto;
+	text-align: center;
+}
+
+#list_organisations .item {
+	float: left;
+	width: 400px;
+	font-size: 14px;
+	margin-bottom:20px;
+}
+
+#list_organisations .name {
+	float:left;
+	font-size:14px;
+	color:#222222;
+	margin-top: 30px;
+	margin-left:10px;
+}
+
+#list_organisations .logo {
+	float:left;
+}

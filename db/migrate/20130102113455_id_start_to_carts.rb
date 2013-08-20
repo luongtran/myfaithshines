@@ -1,6 +1,6 @@
 class IdStartToCarts < ActiveRecord::Migration
   def up
-    execute("ALTER SEQUENCE carts_id_seq RESTART 10000;")    
+    execute("ALTER TABLE carts AUTO_INCREMENT=10000;")    
   end
 
   def down

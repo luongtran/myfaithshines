@@ -1,0 +1,21 @@
+<div id="organisation">
+<h2><b>Welcome</b></h2>
+	<div id="about" style="text-align: center;margin-bottom: 30px;margin-left: 147px margin-top:-20px;">
+		<span style="font-size: 12px">
+			Below is list of organisations in your area. Please select one you would like to support.
+		</span>
+	</div>
+	<div class="clear"></div>
+<%= render "churches_near_user" %>
+
+<div class="clear"></div>
+	<div id="search_panel">
+		<%= form_tag search_by_name_path, :remote => true do |form| %>
+		<span style="font-size: 12px">
+			Didn't find your organisation? Enter the name here: 
+			<%= text_field_tag :keyword %>
+			<%= submit_tag "Search" %>
+		</span>
+		<% end %>
+	</div>
+</div>

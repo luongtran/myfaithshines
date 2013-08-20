@@ -17,6 +17,10 @@ GoodDog::Application.routes.draw do
   
   #resources :payment_notification
   
+  match "/search-near" => 'home#search_churches_near_user', :as => :non_profit_near
+  
+  match "/search" => "non_profits#search_by_name", :as => :search_by_name
+  
   match '/payment_notification' => 'payment_notification#create', :as => :payment_notification
   
   match '/send_mail_messages' => 'admin/mail_messages#send_messages', :as => :send_messages
