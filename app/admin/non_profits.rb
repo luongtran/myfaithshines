@@ -17,7 +17,8 @@ ActiveAdmin.register NonProfit do
       f.input :name
       f.input :email
       f.input :site
-	  f.input :zipcode
+	    f.input :zipcode
+	    f.input :address
       f.input :non_profit_type, :as => :select, :include_blank => false
       f.input :logo, :as => :file, :hint => f.object.logo.blank? ?  f.template.content_tag(:span, "No Image Yet") : f.template.image_tag(f.object.logo.url()) 
     end
