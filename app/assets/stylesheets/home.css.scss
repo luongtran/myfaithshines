@@ -593,7 +593,7 @@ body
   width: 260px;
   margin-bottom: 40px;
 }
-#body #content #sidebar #signup
+#body #content #sidebar #signup div
 {
   text-align: center;
 }
@@ -601,7 +601,7 @@ body
 {
   width: 60px;
 }
-#body #content #sidebar #signup h2
+#body #content #sidebar #signup div h2
 {
   font-size: 16px;
   color: #DB7F0A;
@@ -691,9 +691,6 @@ body
 }
 #body #content #sidebar div#section div div ul.archive li ul
 {
-  background: url("../assets/top-border-long.gif");
-  background-position: top center;
-  background-repeat: no-repeat;
   margin: 0 0 30px -20px;
 }
 #body #content #sidebar div#section div div ul.archive li ul li a

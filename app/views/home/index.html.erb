@@ -1,9 +1,10 @@
-<div id="wrapper">	
+<%= stylesheet_link_tag  'http://fonts.googleapis.com/css?family=Playball', :media => "all" %>
+<div id="wrapper">
 	<div id="sidebar">
 		<div id="signup">
-			<h2>Church Sign Up</h2>
             <div>
-			    <img src='assets/signup.jpg'>
+                <h2>Church Sign Up</h2>
+                <img src='assets/signup.jpg'>
             </div>
 			<span>All non-profit churches, groups and organizations 
 				  are invited to support this faith-based project
@@ -43,6 +44,14 @@
 		</div>			
     </div>
 	<div class="content">
+        <div style="float:left; width: 310px; text-align: center;">
+          <input type="button" value="sign up" title="sign up"><br/>
+          Sign up and build a Faith Block!
+        </div>
+        <div style="float:left; width: 310px; text-align: center;">
+          <input type="button" value="sign in" title="sign in"><br/>
+          Sign in if you are a returning friend!
+        </div>
 		<!-- Going with a static image now instead since the list of organizations is so large
 		<div class="snapshots_wrapper">
 			<% @nonprofits.each do |nonprofit|%>
@@ -54,5 +63,8 @@
 		</div>
 		!-->
 		<img src='assets/home_static_image.jpg'/>
+        <div style="font-family: 'Playball', cursive;">
+          This is my cursive text from google. Any chance this will work?
+        </div>
 	</div>
 </div>
