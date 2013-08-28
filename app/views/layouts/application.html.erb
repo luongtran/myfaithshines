@@ -35,17 +35,17 @@
 			</li>
 			<li class="<%= current_class?(overview_path) %>">
 				<%= link_to 'Overview', overview_path %>
-			</li>			
-			<li class="<%= current_class?(getstarted_path) %>">
+			</li>
+            <li class="<%= current_class?(find_my_block_path) %>">
+                <%= link_to 'My Blocks', find_my_block_path %>
+            </li>
+            <li class="<%= current_class?(getstarted_path) %>">
 				<%= link_to "Get Started", getstarted_path %> 
 			</li>
 			<li class="<%= current_class?(all_sponsors_path) %>">
 				<%= link_to 'All Sponsors', all_sponsors_path %>				
 			</li>
-			<li class="<%= current_class?(find_my_block_path) %>">
-				<%= link_to 'Find My Block', find_my_block_path %>				
-			</li>			
-			<li><%= link_to "Blog", 'http://myfaithshines.blogspot.com/', :target => '_blank' %></li>		
+			<li><%= link_to "Blog", 'http://myfaithshines.blogspot.com/', :target => '_blank' %></li>
 			<% if user_signed_in? %>
 				<li><%= link_to('Sign Out', destroy_user_session_path, :method => :delete) %>  </li>
 			<% else %>

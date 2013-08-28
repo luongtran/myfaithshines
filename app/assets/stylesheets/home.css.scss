@@ -590,37 +590,47 @@ body
 {
   background-image: none;
   float: right;
-  width: 300px;
+  width: 260px;
   margin-bottom: 40px;
+}
+#body #content #sidebar #signup
+{
+  text-align: center;
+}
+#body #content #sidebar #signup img
+{
+  width: 60px;
+}
+#body #content #sidebar #signup h2
+{
+  font-size: 16px;
+  color: #DB7F0A;
+}
+#body #content #sidebar #signup span
+{
+  font-size: 13px;
+  font-style: italic;
 }
 #body #content #sidebar div#section
 {
-  background: url("../assets/bg-sidebar-heading.gif");
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: auto;
+  height: 500px;
   margin-top: 0px;
   overflow: hidden;
 }
 #body #content #sidebar div#section div
 {
-  background: url("../assets/bg-sidebar-bottom-curve.gif");
-  background-position: bottom center;
-  background-repeat: no-repeat;
   height: auto;
   padding: 12px 4px 12px 4px;
 }
 #body #content #sidebar div#section div div
 {
-  background: url("../assets/bg-sidebar.gif");
-  background-position: center;
   height: auto;
   overflow: hidden;
 }
 #body #content #sidebar div#section div div h2
 {
   font-family: "Trebuchet MS";
-  font-size: 21px;
+  font-size: 16px;
   font-weight: normal;
   margin-left: 23px;
 }
@@ -628,6 +638,8 @@ body
 {
   list-style-type: none;
   margin-left: 20px;
+  overflow-y: auto;
+  height: 400px;
 }
 #body #content #sidebar div#section div div ul li
 {
@@ -637,7 +649,7 @@ body
 {
   color: #7F7154;
   font-family: "Trebuchet MS";
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
 }
 #body #content #sidebar div#section div div ul.archive
