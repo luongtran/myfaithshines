@@ -1,52 +1,56 @@
 <div id="wrapper">	
 	<div id="sidebar">						
-	     <div id="section">
+	    <div id="section">
 		    <div class="sectionwrapper">
-		    <% if @sponsors.length >= 1 %>
-		     <% if @sponsors.length > 1  ? @class='rotator' : @class='img_fixed' %>		
-		      <div>
-		      	   <h2>Featured Sponsors</h2>
-			      	<div id="slidercontainer">
-			      	  <div class="<%= @class %>">
-						  <ul>
-						  	<% @sponsors.each do |sponsor|%>
-								<li class="show">
-									<%= link_to image_tag(sponsor.image.url, :border=>0), sponsor.site, :target=>'_blank'  %>
-								</li>
-							<% end %>
-						   
-						  </ul>
+				<!--
+				<% if @sponsors.length >= 1 %>
+					<% if @sponsors.length > 1  ? @class='rotator' : @class='img_fixed' %>		
+						<div>
+							<h2>Featured Sponsors</h2>
+							<div id="slidercontainer">
+								<div class="<%= @class %>">
+									<ul>
+										<% @sponsors.each do |sponsor|%>
+										<li class="show">
+											<%= link_to image_tag(sponsor.image.url, :border=>0), sponsor.site, :target=>'_blank'  %>
+										</li>
+										<% end %>
+									</ul>
+								</div>
+							</div>
 						</div>
-			        </div>
-		      </div>
-		      <%end%>	
-		      <%end%>
-		      <div class="sidecontent">
-		           <h2>Participating Organizations</h2>
-					<ul>
-						<% @nonprofits.each do |nonprofit|%>
-
-						<li>  <%= link_to nonprofit.name, nonprofit_view_path(nonprofit.id) %></li>
-						<% end %>
-					</ul>
-		      </div>
-		    </div>
-		 </div>
-	       
-			
-    </div>
-    <div class="content">
-		<!-- Going with a static image now instead since the list of organizations is so large
-			<div class="snapshots_wrapper">
-				<% @nonprofits.each do |nonprofit|%>
-					<div class="snapshot_container">
-						<%= link_to image_tag(nonprofit.snapshot.url), nonprofit_view_path(nonprofit.id)  %>
-						<%= link_to nonprofit.name, nonprofit_view_path(nonprofit.id), :class=>'nonprofit_name'  %>
-					</div>
-				<% end %>
+					<%end%>	
+				<%end%>
+				!-->
+				<div class="sidecontent">
+					<h2>Church Sign Up</h2>
+					<img href='assets/signup.jpg'>
+					<span>All non-profit churches, groups and organizations 
+						  are invited to support this faith-based project
+					</span>
+				</div>
+				<div class="sidecontent">
+					<h2>Participating Organizations</h2>
+						<ul>
+							<% @nonprofits.each do |nonprofit|%>
+								<li>  <%= link_to nonprofit.name, nonprofit_view_path(nonprofit.id) %></li>
+							<% end %>
+						</ul>
+				</div>
 			</div>
-		!-->
-		<img src='assets/images/home_static_image.jpg'/>
+		</div>			
     </div>
-
+	<div class="content">
+		<!-- Going with a static image now instead since the list of organizations is so large
+		<div class="snapshots_wrapper">
+			<% @nonprofits.each do |nonprofit|%>
+				<div class="snapshot_container">
+					<%= link_to image_tag(nonprofit.snapshot.url), nonprofit_view_path(nonprofit.id)  %>
+					<%= link_to nonprofit.name, nonprofit_view_path(nonprofit.id), :class=>'nonprofit_name'  %>
+				</div>
+			<% end %>
+		</div>
+		!-->
+		<img src='assets/home_static_image.jpg'/>
+	</div>
 </div>
