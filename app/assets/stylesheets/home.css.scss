@@ -597,7 +597,7 @@ body
 {
   text-align: center;
 }
-#body #content #sidebar #signup img
+#body #content #sidebar #signup div img
 {
   width: 60px;
 }
@@ -605,10 +605,11 @@ body
 {
   font-size: 16px;
   color: #DB7F0A;
+  margin-bottom: 5px;
 }
 #body #content #sidebar #signup span
 {
-  font-size: 13px;
+  font-size: 11px;
   font-style: italic;
 }
 #body #content #sidebar div#section
@@ -660,9 +661,7 @@ body
 }
 #body #content #sidebar div#section div div ul.archive li
 {
-  background: url("../assets/top-border-long.gif");
-  background-position: top center;
-  background-repeat: no-repeat;
+
 }
 #body #content #sidebar div#section div div ul.archive li a
 {

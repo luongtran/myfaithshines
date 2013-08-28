@@ -2,7 +2,9 @@
 	<div id="sidebar">
 		<div id="signup">
 			<h2>Church Sign Up</h2>
-			<img src='assets/signup.jpg'>
+            <div>
+			    <img src='assets/signup.jpg'>
+            </div>
 			<span>All non-profit churches, groups and organizations 
 				  are invited to support this faith-based project
 			</span>
@@ -29,7 +31,7 @@
 					<%end%>	
 				<%end%>
 				!-->
-				<div class="sidecontent" style="overflow-y: scroll;">
+				<div class="sidecontent">
 					<h2>Participating Organizations</h2>
 						<ul>
 							<% @nonprofits.each do |nonprofit|%>
