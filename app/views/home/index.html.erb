@@ -1,5 +1,12 @@
 <div id="wrapper">	
-	<div id="sidebar">						
+	<div id="sidebar">
+		<div>
+			<h2>Church Sign Up</h2>
+			<img src='assets/signup.jpg'>
+			<span>All non-profit churches, groups and organizations 
+				  are invited to support this faith-based project
+			</span>
+		</div>
 	    <div id="section">
 		    <div class="sectionwrapper">
 				<!--
@@ -22,14 +29,7 @@
 					<%end%>	
 				<%end%>
 				!-->
-				<div class="sidecontent">
-					<h2>Church Sign Up</h2>
-					<img href='assets/signup.jpg'>
-					<span>All non-profit churches, groups and organizations 
-						  are invited to support this faith-based project
-					</span>
-				</div>
-				<div class="sidecontent">
+				<div class="sidecontent" style="overflow-y: scroll;">
 					<h2>Participating Organizations</h2>
 						<ul>
 							<% @nonprofits.each do |nonprofit|%>
