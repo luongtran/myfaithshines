@@ -52,7 +52,7 @@ $(document).ready(function() {
   //Get Started - select Non Profit, login, sign up
   $(".select_div").hide();
   $('#partial_login').hide();
-  $('#partial_signup').hide();
+  $('#partial_signup').show();
   
     
   $('.duplicate').click(function(){  	
