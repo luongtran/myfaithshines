@@ -48,10 +48,11 @@
 	<div class="content">
         <div style="float:left; width: 310px; text-align: center;">
           <input type="button" value="sign up" title="sign up" style="color: #C89305;"><br/>
+          <div id="sign_button"> <%= link_to "Sign up", '#', :class =>'button', :id => 'button' %></div>
           Sign up and build a Faith Block!
         </div>
         <div style="float:left; width: 310px; text-align: center;">
-          <input type="button" value="sign in" title="sign in" style="color: #C89305;"><br/>
+          <div id="log_button"> <%= link_to "Sign in", '#', :class =>'button', :id => 'button' %></div>
           Sign in if you are a returning friend!
         </div>
 		<!-- Going with a static image now instead since the list of organizations is so large
