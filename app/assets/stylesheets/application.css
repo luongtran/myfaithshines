@@ -159,8 +159,7 @@ padding: .2em .2em 0;
     height: 175px;
     min-height: 175px;
     max-height: 175px;
-    vertical-align: middle;
-    display: table-cell;
+    display: table;
 }
 
 #list_organisations .name {
@@ -173,5 +172,7 @@ padding: .2em .2em 0;
 }
 
 #list_organisations .inner_item {
-
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
