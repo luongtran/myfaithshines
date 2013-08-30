@@ -5,8 +5,8 @@
 		<div class="item">
 			<div class="logo">
 				<%= link_to (nonprofit_view_path(non_profit)) do %>
-				<%= image_tag non_profit.logo.url(:thumb) %>
-                <%= image_tag non_profit.logo.url %>
+
+                <%= image_tag non_profit.logo.url :class => 'search_result_img' %>
 				<% end %>
 			</div>
 			<div class="name">
