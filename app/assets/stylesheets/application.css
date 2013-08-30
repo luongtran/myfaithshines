@@ -153,19 +153,25 @@ padding: .2em .2em 0;
 
 #list_organisations .item {
 	float: left;
-	width: 400px;
+	min-width: 140px;
 	font-size: 14px;
 	margin-bottom:20px;
+    height: 175px;
+    min-height: 175px;
+    max-height: 175px;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 #list_organisations .name {
-	float:left;
 	font-size:14px;
 	color:#222222;
-	margin-top: 30px;
-	margin-left:10px;
 }
 
 #list_organisations .logo {
-	float:left;
+
+}
+
+#list_organisations .inner_item {
+
 }
