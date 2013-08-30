@@ -160,6 +160,7 @@ padding: .2em .2em 0;
     min-height: 175px;
     max-height: 175px;
     display: table;
+    margin-right: 25px;
 }
 
 #list_organisations .name {
