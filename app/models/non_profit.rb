@@ -17,15 +17,15 @@ class NonProfit < ActiveRecord::Base
       :s3_credentials => "#{Rails.root}/config/s3.yml",
       :s3_host_name=> "s3-us-west-2.amazonaws.com",
       :styles => {
-      :thumb => "140x140#" },
-    :convert_options => {
-      :thumb => "-quality 140x140 -strip" }
+      :thumb => "80x80#" },
+      :convert_options => {
+        :thumb => "-quality 140x140 -strip" }
       
    has_attached_file :logo, :storage => :s3, 
       :s3_credentials => "#{Rails.root}/config/s3.yml", 
       :s3_host_name=> "s3-us-west-2.amazonaws.com",
       :styles => {
-      :thumb => "140x140#" },
+      :thumb => "80x80#" },
     :convert_options => {
       :thumb => "-quality 140x140 -strip" }
       
