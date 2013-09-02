@@ -17,7 +17,7 @@ class NonProfit < ActiveRecord::Base
       :s3_credentials => "#{Rails.root}/config/s3.yml",
       :s3_host_name=> "s3-us-west-2.amazonaws.com",
       :styles => {
-      :thumb => "80x80#" },
+      :thumb => "140x140" },
     :convert_options => {
       :thumb => "-quality 75 -strip" }
       
@@ -25,7 +25,7 @@ class NonProfit < ActiveRecord::Base
       :s3_credentials => "#{Rails.root}/config/s3.yml", 
       :s3_host_name=> "s3-us-west-2.amazonaws.com",
       :styles => {
-      :thumb => "80x80#" },
+      :thumb => "140x140" },
     :convert_options => {
       :thumb => "-quality 75 -strip" } 
       
