@@ -29,7 +29,7 @@ class NonProfit < ActiveRecord::Base
     :convert_options => {
       :thumb => "-quality 140x140 -strip" }
       
-  attr_accessible :address, :zipcode, :lat, :lng, :state_id, :name, :email, :site, :non_profit_type_id
+  attr_accessible :address, :zipcode, :lat, :lng, :state_id, :name, :email, :site, :non_profit_type_id, :logo
       
   acts_as_mappable :default_units => :miles,
                    :default_formula => :sphere,
