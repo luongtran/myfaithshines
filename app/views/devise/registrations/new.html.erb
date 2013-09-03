@@ -9,11 +9,21 @@
   <%= devise_error_messages! %>
 	<table>
 		<tr><td><%= f.label :email %></td><td><%= f.email_field :email %></td></tr>
-		<tr><td><%= f.label :password %></td><td> <%= f.password_field :password %></td></tr>
-		<tr><td><%= f.label :password_confirmation %></td><td> <%= f.password_field :password_confirmation %></td></tr>
+        <tr id="registration">
+          <td><%= f.label :zipcode %></td>
+          <td><%= f.text_field :zipcode %></td>
+        </tr>
+        <!-- <tr id="registration">
+               <td>Address</td>
+               <td><%= text_field_tag :address %></td>
+             </tr> -->
+        <tr id="registration">
+          <td><%= f.label :location_radius %></td>
+          <td><%= f.select :location_radius, [['10 miles', 10], ['25 miles', 25], ['50 miles', 50], ['100 miles', 100]] %></td>
+        </tr>
+          <tr><td><%= f.label :password %></td><td> <%= f.password_field :password %></td></tr>
+          <tr><td><%= f.label :password_confirmation %></td><td> <%= f.password_field :password_confirmation %></td></tr>
 	</table>
-	
-
   	<div id="sign_in_button">
   		<%= f.submit "Sign up", :id=>'button', :class=> 'button' %>
   	</div>
