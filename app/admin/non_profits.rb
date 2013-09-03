@@ -34,6 +34,7 @@ ActiveAdmin.register NonProfit do
     column :email
     column :site
 	  column :zipcode
+    column :payment_received
     column :created_at
     column :updated_at
    # column :snapshot_file_name
