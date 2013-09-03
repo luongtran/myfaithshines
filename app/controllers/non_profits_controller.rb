@@ -103,6 +103,9 @@ class NonProfitsController < ApplicationController
     @reservations = Reservation.active.find(:all,  :conditions => "non_profit_id = #{@non_profit.id}")
     
   end
-  
+
+  def new
+
+  end
   
 end
