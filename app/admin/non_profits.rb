@@ -12,7 +12,7 @@ ActiveAdmin.register NonProfit do
   end
   
   form :html => { :enctype => "multipart/form-data" } do |f|
-     f.inputs "Details" do
+      f.inputs "Details" do
       f.input :state, :as => :select, :include_blank => false
       f.input :name
       f.input :email

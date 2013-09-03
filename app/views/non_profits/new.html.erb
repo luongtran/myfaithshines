@@ -1,0 +1,26 @@
+<%= form_for(@non_profit) do |f| %>
+  <% if @non_profit.errors.any? %>
+    <div id="error _explanation">
+      <h2><%= pluralize(@non_profit.errors.count, "error") %>
+      prohibited this non-profit from being saved:</h2>
+
+      <ul>
+        <% @non_profit.errors.fullmessages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="field">
+  <%= f.label :name %><br/>
+  <%= f.text_field :name %>
+</div>
+<div class="field">
+  <%= f.label :email %><br/>
+  <%= f.text_field :email %>
+</div>
+<div class="actions">
+  <%= f.submit %>
+</div>
+<% end %>
