@@ -1,4 +1,11 @@
-
+<script type="text/javascript">
+	$(document).ready(function() {
+		var url = window.location.href;
+		var target = url.split("#").pop();
+		$('.partial_form').hide();
+		$('#partial_'+target).show();
+	});
+</script>
 <div id="get_started_wrapper">
 	<h2><b>Get Started</b></h2>
 	<%if current_user.nil? %>
@@ -14,11 +21,11 @@
 			<div id="sign_button"> <%= link_to "Sign up", '#', :class =>'button', :id => 'button' %></div>
 			<div id="log_button"> <%= link_to "Sign in", '#', :class =>'button', :id => 'button' %></div>
 			
-				<div id="partial_signup" style="margin-left: 147px;margin-top:40px display:none;">
+				<div id="partial_signup" style="margin-left: 147px;margin-top:40px display:none;" class="partial_form" >
 					<%= render :partial=> 'devise/registrations/get_started_signup' %>  		
 				</div>
 				
-				<div id="partial_login" style="margin-left: 147px;margin-top:40px; display:none;">
+				<div id="partial_login" style="margin-left: 147px;margin-top:40px; display:none;" class="partial_form" >
 					<%= render :partial=> 'devise/sessions/get_started_login' %>  		
 				</div>
 			

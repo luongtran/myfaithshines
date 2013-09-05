@@ -177,3 +177,12 @@ padding: .2em .2em 0;
     vertical-align: middle;
     text-align: center;
 }
+
+.paypal {
+	opacity: 0.6;
+	text-indent: -9999px;
+	width: 150px;
+	height: 33px;
+	border: medium none;
+	background: url("https://www.paypal.com/en_US/i/btn/btn_dg_pay_w_paypal.gif") repeat scroll 0% 0% transparent;
+}

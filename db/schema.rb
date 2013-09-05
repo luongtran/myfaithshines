@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130823164430) do
+ActiveRecord::Schema.define(:version => 20130905161125) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -146,8 +146,8 @@ ActiveRecord::Schema.define(:version => 20130823164430) do
     t.string   "name"
     t.string   "email"
     t.string   "site"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
     t.integer  "state_id"
     t.string   "snapshot_file_name"
     t.string   "snapshot_content_type"
@@ -163,7 +163,19 @@ ActiveRecord::Schema.define(:version => 20130823164430) do
     t.float    "lat"
     t.float    "lng"
     t.string   "address"
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.string   "status"
   end
+
+  add_index "non_profits", ["reset_password_token"], :name => "index_non_profits_on_reset_password_token", :unique => true
 
   create_table "payment_notifications", :force => true do |t|
     t.text     "params"
@@ -180,6 +192,20 @@ ActiveRecord::Schema.define(:version => 20130823164430) do
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
     t.integer  "associate_producer_id"
+  end
+
+  create_table "payments", :force => true do |t|
+    t.float    "amount"
+    t.string   "token"
+    t.string   "identifier"
+    t.integer  "non_profit_id"
+    t.boolean  "recurring"
+    t.boolean  "digital"
+    t.boolean  "popup"
+    t.boolean  "completed"
+    t.boolean  "canceled"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "profit_sponsors", :force => true do |t|

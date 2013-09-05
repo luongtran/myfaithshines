@@ -19,9 +19,10 @@ class Admins::SessionsController < Devise::SessionsController
   end
 
   def new
-    self.resource = build_resource(nil, :unsafe => true)
-    clean_up_passwords(resource)
-    respond_with(resource, serialize_options(resource))
+    super
+    # self.resource = build_resource(nil, :unsafe => true)
+    # clean_up_passwords(resource)
+    # respond_with(resource, serialize_options(resource))
   end
   
    # POST /resource/sign_in
@@ -40,4 +41,5 @@ class Admins::SessionsController < Devise::SessionsController
       respond_with resource, :location => getstarted_path
     end
   end
+  
 end

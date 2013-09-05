@@ -1,4 +1,6 @@
 GoodDog::Application.routes.draw do
+  devise_for :non_profits, :controllers => {:registrations => "non_profits/registrations"}
+
   get "home/index"
 
   devise_for :users, :controllers => { :sessions => "admins/sessions",:registrations => "admins/registrations"}
@@ -17,6 +19,14 @@ GoodDog::Application.routes.draw do
   
   #resources :payment_notification
   
+  resources :payments, only: [:show, :create, :destroy, :new] do
+    collection do
+      get :success
+      get :cancel
+      post :notify
+    end
+  end
+  
   match "/search-near" => 'home#search_churches_near_user', :as => :non_profit_near
   
   match "/search" => "non_profits#search_by_name", :as => :search_by_name
@@ -30,6 +40,7 @@ GoodDog::Application.routes.draw do
   match '/nonprofit/:id' => 'non_profits#show', :as => :nonprofit_view
   match '/nonprofit/:id/:dog_id' => 'non_profits#show', :as => :nonprofit_with_dog_view
   match '/new_nonprofit' => 'non_profits#new', :as => :non_profit
+  post '/nonprofit/create' => 'non_profits#create', :as => :non_profits
    
   match '/add_gift_code/:non_profit_id/:gift_code' => 'reservations#validate_gift_code', :as=> :add_gift_code
   match '/validate_gift_codes/:non_profit_id' => 'reservations#validate_gift_code_list', :as=> :add_gift_code_list

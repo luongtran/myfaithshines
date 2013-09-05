@@ -20,7 +20,18 @@
   <%= f.label :email %><br/>
   <%= f.text_field :email %>
 </div>
+
+<div class="field">
+	<%= f.label :address %><br/>
+	<%= f.text_field :address %>
+</div>
+
+<div class="field">
+	<%= f.label :zipcode %><br/>
+	<%= f.text_field :zipcode %>
+</div>
+
 <div class="actions">
-  <%= f.submit %>
+  <%= f.submit "Next", :class => "button" %>
 </div>
 <% end %>

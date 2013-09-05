@@ -13,6 +13,14 @@
 #
 
 class NonProfit < ActiveRecord::Base
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :confirmable,
+  # :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
   has_attached_file :snapshot, :storage => :s3, 
       :s3_credentials => "#{Rails.root}/config/s3.yml",
       :s3_host_name=> "s3-us-west-2.amazonaws.com",
@@ -29,7 +37,7 @@ class NonProfit < ActiveRecord::Base
     :convert_options => {
       :thumb => "-quality 140x140 -strip" }
       
-  attr_accessible :address, :zipcode, :lat, :lng, :state_id, :name, :email, :site, :non_profit_type_id, :logo
+  attr_accessible :address, :zipcode, :lat, :lng, :state_id, :name, :email, :site, :non_profit_type_id, :logo, :status, :payment_received
       
   acts_as_mappable :default_units => :miles,
                    :default_formula => :sphere,
@@ -47,10 +55,18 @@ class NonProfit < ActiveRecord::Base
    
   validates_attachment_size :logo, :less_than => 2000.kilobytes, :message => "Image max size is 2000KB"
   
+  validates_uniqueness_of :email
+  
   before_create :initialize_update_flag
   before_destroy :check_for_rooms
   
   before_save :address_to_lat_lng
+  
+  STATUS = {
+    :new => "New",
+    :verified => "Verified",
+    :inprogress => "Inprogress"
+  }
 
   def check_for_rooms  
     unless rooms.nil?     
@@ -61,7 +77,7 @@ class NonProfit < ActiveRecord::Base
   
   def self.search_near_by_zipcode(zipcode, radius)
     #NonProfit.geo_scope(:origin=>zipcode, :conditions=>"distance<#{radius}")
-    NonProfit.geo_scope(:within => radius, :origin => zipcode)
+    NonProfit.geo_scope(:within => radius, :origin => zipcode).where('status = ?', "Verified")
   end
   
   include RestClient

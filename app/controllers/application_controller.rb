@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Notification
   protect_from_forgery
   before_filter :reservation_counter
   helper_method :reservation_counter

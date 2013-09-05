@@ -1,0 +1,10 @@
+<%= form_for @payment do |f| %>
+  <%= f.hidden_field :amount %>
+  <%= f.hidden_field :digital %>
+  <%= f.hidden_field :recurring %>
+  <%= f.hidden_field :popup %>
+  <%= f.submit 'Pay', :class => "paypal" %>
+<% end %>
+
+<script src="https://www.paypalobjects.com/js/external/dg.js"></script>
+  

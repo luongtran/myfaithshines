@@ -46,6 +46,7 @@ gem 'aws-s3', :require => 'aws/s3'
 gem 'aws-sdk';
 
 gem 'jquery-rails', '~> 2.3.0'
+gem 'sass'
 
 gem 'execjs'
 
@@ -83,6 +84,8 @@ group :test do
   gem "capybara"
   gem "wdm", '~>0.1'
 end
+
+gem 'paypal-express'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

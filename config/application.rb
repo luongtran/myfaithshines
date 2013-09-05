@@ -58,6 +58,8 @@ module GoodDog
     config.assets.version = '1.0'
     config.autoload_paths += Dir["#{config.root}/lib", "#{config.root}/lib/**/"]
     config.threadsafe!
+    
+    config.active_record.identity_map = true
 
   end
 end

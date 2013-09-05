@@ -1,0 +1,2 @@
+module NonProfits::RegistrationsHelper
+end

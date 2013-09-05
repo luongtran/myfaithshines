@@ -1,6 +1,6 @@
 class NonProfitsController < ApplicationController
   #before_filter :authenticate_user!
-
+  
  
   def show
     @non_profit = NonProfit.find_by_id(params[:id])    
@@ -40,12 +40,13 @@ class NonProfitsController < ApplicationController
    #==========================================
   
   def search_by_name
-    @non_profits = NonProfit.where("name like '%#{params[:keyword]}%'")
+    @non_profits = NonProfit.where("name like '%#{params[:keyword]}%' AND status = ?", "Verified")
     respond_to do |format|
       format.js
     end
   end
-   
+  
+  
   def select      
   
     if !params[:dog_id].blank?
@@ -105,7 +106,18 @@ class NonProfitsController < ApplicationController
   end
 
   def new
-
+     @non_profit = NonProfit.new
   end
+  
+  def create
+    @non_profit = NonProfit.new(params[:non_profit])
+    session[:non_profit_id] = @non_profit.id
+    if @non_profit.save
+      redirect_to :non_profit_payment_path, :flash => "Non Profit signup successfully"
+    end
+  end
+  
+  
+  
   
 end
