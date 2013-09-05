@@ -105,8 +105,10 @@ class NonProfitsController < ApplicationController
     
   end
 
+
   def new
      @non_profit = NonProfit.new
+
   end
   
   def create
