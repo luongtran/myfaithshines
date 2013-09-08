@@ -104,7 +104,7 @@ class NonProfitsController < ApplicationController
     
   end
 
-  def new
+  def signup
 
   end
   
