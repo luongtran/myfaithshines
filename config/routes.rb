@@ -20,6 +20,7 @@ GoodDog::Application.routes.draw do
   match "/search-near" => 'home#search_churches_near_user', :as => :non_profit_near
   
   match "/search" => "non_profits#search_by_name", :as => :search_by_name
+  match "/add_nonprofit" => "non_profits#signup"
   
   match '/payment_notification' => 'payment_notification#create', :as => :payment_notification
   
@@ -29,7 +30,6 @@ GoodDog::Application.routes.draw do
   
   match '/nonprofit/:id' => 'non_profits#show', :as => :nonprofit_view
   match '/nonprofit/:id/:dog_id' => 'non_profits#show', :as => :nonprofit_with_dog_view
-  match '/nonprofit/signup' => 'non_profits#signup'
    
   match '/add_gift_code/:non_profit_id/:gift_code' => 'reservations#validate_gift_code', :as=> :add_gift_code
   match '/validate_gift_codes/:non_profit_id' => 'reservations#validate_gift_code_list', :as=> :add_gift_code_list
